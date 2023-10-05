@@ -1,0 +1,46 @@
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\1-2 stickfigure.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Synth level alpha.exe
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Synth level alpha.deps.json
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Synth level alpha.runtimeconfig.json
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Synth level alpha.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Synth level alpha.pdb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.csproj.AssemblyReference.cache
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.AssemblyInfoInputs.cache
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.AssemblyInfo.cs
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.csproj.CoreCompileInputs.cache
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.csproj.CopyComplete
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\refint\Synth level alpha.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.pdb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\Synth level alpha.genruntimeconfig.cache
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\obj\Debug\net6.0-windows\ref\Synth level alpha.dll
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\bad stickfigure.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\Background1.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\far.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\mid.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\near.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\terrain1.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\terrain2.xnb
+C:\Users\j44nj\source\repos\Synth level alpha\Synth level alpha\bin\Debug\net6.0-windows\Content\File.xnb

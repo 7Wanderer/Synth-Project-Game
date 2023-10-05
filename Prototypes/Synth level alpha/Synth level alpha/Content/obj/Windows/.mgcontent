@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/Pictures/art/Synth Project/1-2 stickfigure.png</File>
+    <File>D:/Pictures/art/Synth Project/Background1.png</File>
+    <File>D:/Pictures/art/Synth Project/parallax1/far.png</File>
+    <File>D:/Pictures/art/Synth Project/parallax1/mid.png</File>
+    <File>D:/Pictures/art/Synth Project/parallax1/near.png</File>
+    <File>D:/Pictures/art/Synth Project/terrain1.png</File>
+    <File>D:/Pictures/art/Synth Project/terrain2.png</File>
+    <File>C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/File.spritefont</File>
+  </SourceFiles>
+  <DestFiles>
+    <File>1-2 stickfigure.png</File>
+    <File>Background1.png</File>
+    <File>far.png</File>
+    <File>mid.png</File>
+    <File>near.png</File>
+    <File>terrain1.png</File>
+    <File>terrain2.png</File>
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
