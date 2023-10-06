@@ -70,10 +70,17 @@ foreach(KeyValuePair<string,int> response in responses)
 }
 score = score.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
 List<string> results = new();
-for(int i = 0; i < score.Count; i++)
+for(int i = 0; i < score.Count-1; i++)
 {
-    Console.WriteLine(score.ElementAt(i).Key);
-    Console.WriteLine(score.ElementAt(i).Value);
+    if(score.ElementAt(i+1).Value>score.ElementAt(i).Value)
+    {
+        results.Clear();
+        results.Add(score.ElementAt(i).Key);
+    }
+    else if (score.ElementAt(i + 1).Value > score.ElementAt(i).Value)
+    {
+        results.Add(score.ElementAt(i).Key);
+    }
 }
 
 
