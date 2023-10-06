@@ -1,0 +1,13 @@
+?
+Have you ever looked at your reflection in the mirror and thought "What a cool person!"
+Certainly!
+.Jolly1 Naive1 Sassy1 
+Well, not really...
+.Hardy1 
+
+?
+Have you ever thought that if you dug into your backyard, you would find a buried treasure?
+Yes.
+.Naive2 
+No.
+.Quiet1 
