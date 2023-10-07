@@ -75,12 +75,16 @@ for(int i = 0; i < score.Count-1; i++)
     if(score.ElementAt(i+1).Value>score.ElementAt(i).Value)
     {
         results.Clear();
-        results.Add(score.ElementAt(i).Key);
+        results.Add(score.ElementAt(i+1).Key);
     }
-    else if (score.ElementAt(i + 1).Value > score.ElementAt(i).Value)
+    else if (score.ElementAt(i + 1).Value == score.ElementAt(i).Value)
     {
-        results.Add(score.ElementAt(i).Key);
+        results.Add(score.ElementAt(i+1).Key);
     }
+}
+foreach (string r in results)
+{
+    Console.WriteLine(r);
 }
 
 
