@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MWwwrEw7/qfECB6lcJ0EY+HJjThDyWhmEg2ZkqrYsxxlyMJ4prd6QuBEp/D2u9oNh5JhAk7SzMcZnQCwQNeKaQ==",
+  "dgSpecHash": "3LhPgbQddzJXsTAt7tY3BQvK1vN5g+elNAR93CM9uj5F4OKlOuLhRRPBiUK8NywTQOwL9WMZrYm61ttltBfRfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\j44nj\\source\\repos\\Synth level alpha\\Synth level alpha\\Synth level alpha.csproj",
+  "projectFilePath": "C:\\Users\\j44nj\\Documents\\git\\Synth-Project-Game\\Prototypes\\Synth level alpha\\Synth level alpha\\Synth level alpha.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j44nj\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\j44nj\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
