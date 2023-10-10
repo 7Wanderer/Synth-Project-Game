@@ -8,7 +8,7 @@ Pikachu
 
 Eevee
 
-Jigglypuff
+Meowth
 
 Vulpix
 
@@ -30,6 +30,8 @@ Mudkip
 
 Ralts
 
+Skitty
+
 Turtwig
 
 Chimchar
@@ -40,13 +42,15 @@ Shinx
 
 Riolu
 
+Munchlax
+
 Snivy
 
 Tepig
 
 Oshawott
 
-Solosis
+Axew
 
 Chespin
 
@@ -55,6 +59,98 @@ Fennekin
 Froakie
 
 Rowlet
+
+Jigglypuff
+
+Pidgey
+
+Caterpie
+
+Nidoran
+
+Gastly
+
+Abra
+
+Geodude
+
+Dratini
+
+Mareep
+
+Sentret
+
+Hoothoot
+
+Ledyba
+
+Marill
+
+Wooper
+
+Misdreavus
+
+Sneasel
+
+Larvitar
+
+Poochyena
+
+Nincada
+
+Taillow
+
+Makuhita
+
+Aron
+
+Electrike
+
+Gulpin
+
+Vibrava
+
+Spheal
+
+Shuppet
+
+Budew
+
+Kriketot
+
+Drifloon
+
+Shellos
+
+Gible
+
+Snover
+
+Pidove
+
+Roggenrola
+
+Timburr
+
+Venipede
+
+Cottonee
+
+Dwebble
+
+Mincinno
+
+Solosis
+
+Vanillite
+
+Joltik
+
+Litwick
+
+Pawniard
+
+Deino
 
 Litten
 
