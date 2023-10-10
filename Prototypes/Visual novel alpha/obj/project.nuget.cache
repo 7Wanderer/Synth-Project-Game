@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sy8zjFjB5nZkhTG0OKEdCTehLHx+CVGnzYds1MDtzh5Hcm1Yrqhcm+yiQoOHtdteDNlEQzM1nwj3H384TDRvQA==",
+  "dgSpecHash": "0xSGx4uvYjC3KZtwOgk8BVjwtzcmT3SRNivqos/ZBoxNaW93u5AZAU+PnFuDjkRYinU58IkmBhLtydeDSkwJ8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\j44nj\\Documents\\git\\Synth-Project-Game\\Prototypes\\Visual novel alpha\\Visual novel alpha.csproj",
+  "projectFilePath": "D:\\synth project game\\Synth-Project-Game\\Prototypes\\Visual novel alpha\\Visual novel alpha.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j44nj\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\j44nj\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
