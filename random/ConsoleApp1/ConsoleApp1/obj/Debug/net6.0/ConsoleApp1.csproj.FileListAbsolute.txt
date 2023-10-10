@@ -26,3 +26,18 @@ C:\Users\j44nj\Documents\git\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\o
 C:\Users\j44nj\Documents\git\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
 C:\Users\j44nj\Documents\git\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
+D:\synth project game\Synth-Project-Game\random\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll
