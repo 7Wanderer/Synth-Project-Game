@@ -1,6 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Visual_novel_alpha.scripts;
+using System.Linq;
+using System;
+using System.Collections.Generic;
 
 namespace Visual_novel_alpha
 {
@@ -10,6 +14,7 @@ namespace Visual_novel_alpha
         private SpriteBatch _spriteBatch;
 
         Actor player1;
+        Textbox textbox;
 
         public SpriteFont gameFont;
 
@@ -25,6 +30,7 @@ namespace Visual_novel_alpha
             // TODO: Add your initialization logic here
             _graphics.PreferredBackBufferHeight = 1080;
             _graphics.PreferredBackBufferWidth = 1920;
+            _graphics.IsFullScreen = true;
             _graphics.ApplyChanges();
             base.Initialize();
         }
@@ -36,7 +42,10 @@ namespace Visual_novel_alpha
             Texture2D portraitAlpha = Content.Load<Texture2D>("Syn neutral");
             gameFont = Content.Load<SpriteFont>("defaultFont");
 
+            Texture2D textboxTexture = Content.Load<Texture2D>("VN Text box");
+
             player1 = new(portraitAlpha);
+            textbox = new(textboxTexture, gameFont);
 
             // TODO: use this.Content to load your game content here
         }
@@ -48,6 +57,9 @@ namespace Visual_novel_alpha
 
             // TODO: Add your update logic here
 
+            new testScript(new List<Actor>{player1}.ToArray(),textbox).Run(gameTime);
+
+
             base.Update(gameTime);
         }
 
@@ -58,6 +70,7 @@ namespace Visual_novel_alpha
             _spriteBatch.Begin();
             
             player1.Draw(_spriteBatch);
+            textbox.Draw(_spriteBatch);
             
             _spriteBatch.End();
 

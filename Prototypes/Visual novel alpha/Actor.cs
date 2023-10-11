@@ -15,7 +15,7 @@ namespace Visual_novel_alpha
         IdleAnim,
         RunningAnim
     }
-    enum Portraits
+    public enum Portraits
     {
         Normal,
         Happy,
@@ -35,29 +35,43 @@ namespace Visual_novel_alpha
     public class Actor
     {
         //constants (had to define with readonly because i'm a bitch)
-        readonly int SPRITE_WIDTH = 480, SPRITE_HEIGHT=960;
-        readonly float SPRITE_SCALE = 1;
+        // readonly int SPRITE_WIDTH = 480, SPRITE_HEIGHT=960;
+        // readonly float SPRITE_SCALE = 1;
         readonly int PORTRAIT_WIDTH = 0, PORTRAIT_HEIGHT;
         readonly float PORTRAIT_SCALE = 1;
 
         readonly Vector2 DEFAULT = new(80,80);
         readonly Vector2 DEFAULT_REVERSE = new(1360,80);
 
-        TextureSheet animation = TextureSheet.IdleAnim;
+        // TextureSheet animation = TextureSheet.IdleAnim;
 
         Portraits portrait = Portraits.Normal;
 
-        Texture2D[] spriteTextureSheets;
+        // Texture2D[] spriteTextureSheets;
         Texture2D portraitTextureSheet;
 
-        Vector2 spritePosition;
+        // Vector2 spritePosition;
         Vector2 portraitPosition;
 
-        SpriteEffects isReversed;
-        SpriteEffects portraitReversed;
+        // SpriteEffects isReversed;
+        SpriteEffects portraitReversed = SpriteEffects.None;
 
-        bool portraitHidden = true;
+        bool hidden = true, portraitHidden = true;
 
+        public void SetFace(Portraits portrait, bool Reversed)
+        {
+            this.portrait = portrait;
+            if(Reversed)
+            {
+                portraitReversed = SpriteEffects.FlipHorizontally;
+                portraitPosition = DEFAULT_REVERSE;
+            }
+            else
+            {
+                portraitReversed = SpriteEffects.None;
+                portraitPosition = DEFAULT;
+            }
+        }
         public Actor(Texture2D portraitTextureSheet) 
         { 
             // this.spritePosition = spritePosition;
@@ -65,7 +79,10 @@ namespace Visual_novel_alpha
             this.portraitTextureSheet = portraitTextureSheet;
             portraitPosition = DEFAULT;
         }
+        public void WaitExecuteLives()
+        {
 
+        }
         public void Update()
         {
 
@@ -92,7 +109,7 @@ namespace Visual_novel_alpha
                 spriteBatch.Draw(portraitTextureSheet,
                     portraitPosition,
                     getRectFromPortrait(),
-                    Color.White, 0, new Vector2(), SPRITE_SCALE, isReversed, 0);
+                    Color.White, 0, new Vector2(), PORTRAIT_SCALE, portraitReversed, 0);
         }
     }
 }

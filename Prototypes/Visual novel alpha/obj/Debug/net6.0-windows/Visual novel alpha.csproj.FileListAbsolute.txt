@@ -35,3 +35,6 @@ D:\synth project game\Synth-Project-Game\Prototypes\Visual novel alpha\obj\Debug
 D:\synth project game\Synth-Project-Game\Prototypes\Visual novel alpha\obj\Debug\net6.0-windows\Visual novel alpha.pdb
 D:\synth project game\Synth-Project-Game\Prototypes\Visual novel alpha\obj\Debug\net6.0-windows\Visual novel alpha.genruntimeconfig.cache
 D:\synth project game\Synth-Project-Game\Prototypes\Visual novel alpha\obj\Debug\net6.0-windows\ref\Visual novel alpha.dll
+D:\synth project game\Synth-Project-Game\Prototypes\Visual novel alpha\bin\Debug\net6.0-windows\Content\defaultFont.xnb
+D:\synth project game\Synth-Project-Game\Prototypes\Visual novel alpha\bin\Debug\net6.0-windows\Content\Syn neutral.xnb
+D:\synth project game\Synth-Project-Game\Prototypes\Visual novel alpha\bin\Debug\net6.0-windows\Content\VN Text box.xnb

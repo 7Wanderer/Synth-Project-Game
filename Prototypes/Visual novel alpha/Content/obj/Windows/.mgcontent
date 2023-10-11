@@ -6,8 +6,10 @@
   <SourceFiles>
     <File>D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/defaultFont.spritefont</File>
     <File>D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/Syn neutral.png</File>
+    <File>D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/VN Text box.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
