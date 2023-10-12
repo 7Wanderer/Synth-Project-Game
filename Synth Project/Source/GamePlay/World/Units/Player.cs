@@ -39,9 +39,9 @@ namespace Synth_Project
             base.Update();
         }
 
-        public override void Draw()
+        public override void Draw(Vector2 OFFSET)
         {
-            base.Draw();
+            base.Draw(OFFSET);
         }
 
     }

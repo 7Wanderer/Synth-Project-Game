@@ -12,19 +12,19 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace Synth_Project
 {
-    public class baseTimer
+    public class BaseTimer
     {
         public bool goodToGo;
         protected int mSec;
         protected TimeSpan timer = new();
         
 
-        public baseTimer(int m)
+        public BaseTimer(int m)
         {
             goodToGo = false;
             mSec = m;
         }
-        public baseTimer(int m, bool STARTLOADED)
+        public BaseTimer(int m, bool STARTLOADED)
         {
             goodToGo = STARTLOADED;
             mSec = m;

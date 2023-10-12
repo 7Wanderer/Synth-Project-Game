@@ -12,13 +12,13 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace Synth_Project
 {
-    public class baseKey
+    public class BaseKey
     {
         public int state;
         public string key, print, display;
 
         
-        public baseKey(string KEY, int STATE)
+        public BaseKey(string KEY, int STATE)
         {
             key = KEY;
             state = STATE;

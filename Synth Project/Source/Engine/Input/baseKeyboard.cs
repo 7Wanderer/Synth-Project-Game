@@ -12,14 +12,14 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace Synth_Project
 {
-    public class baseKeyboard
+    public class BaseKeyboard
     {
 
         public KeyboardState newKeyboard, oldKeyboard;
 
-        public List<baseKey> pressedKeys = new(), previousPressedKeys = new();
+        public List<BaseKey> pressedKeys = new(), previousPressedKeys = new();
 
-        public baseKeyboard()
+        public BaseKeyboard()
         {
 
         }
@@ -36,7 +36,7 @@ namespace Synth_Project
         {
             oldKeyboard = newKeyboard;
 
-            previousPressedKeys = new List<baseKey>();
+            previousPressedKeys = new List<BaseKey>();
             for(int i=0;i<pressedKeys.Count;i++)
             {
                 previousPressedKeys.Add(pressedKeys[i]);
@@ -70,7 +70,7 @@ namespace Synth_Project
             for(int i=0; i<newKeyboard.GetPressedKeys().Length; i++)
             {
 
-                    pressedKeys.Add(new baseKey(newKeyboard.GetPressedKeys()[i].ToString(), 1));
+                    pressedKeys.Add(new BaseKey(newKeyboard.GetPressedKeys()[i].ToString(), 1));
   
             }
         }

@@ -43,7 +43,7 @@ namespace Synth_Project
         {
             Globals.spriteBatch = new SpriteBatch(GraphicsDevice);
             Globals.content = this.Content;
-            Globals.keyboard = new baseKeyboard();
+            Globals.keyboard = new BaseKeyboard();
 
 
             world = new World();
@@ -81,7 +81,9 @@ namespace Synth_Project
 
             Globals.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
 
-            world.Draw();
+            world.Draw(Vector2.Zero);
+
+
 
             Globals.spriteBatch.End();
 

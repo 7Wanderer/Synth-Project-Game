@@ -12,14 +12,20 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace Synth_Project
 {
+
+    public delegate void PassObject(object i);
+    public delegate void PassObjectAndReturn(object i);
+
     class Globals
     {
         public static int screenWidth, screenHeight;
 
+
+
         public static ContentManager content;
         public static SpriteBatch spriteBatch;
 
-        public static baseKeyboard keyboard;
+        public static BaseKeyboard keyboard;
 
         public static GameTime gameTime;
 

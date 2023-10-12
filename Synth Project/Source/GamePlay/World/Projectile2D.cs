@@ -19,7 +19,7 @@ namespace Synth_Project
         public float speed = 12.5f;
         public Vector2 direction;
         public bool done = false;
-        public baseTimer timer = new(1200);
+        public BaseTimer timer = new(1200);
         
         public Projectile2D(string PATH, Vector2 Position, Vector2 Dimensions, Vector2 Target)
             : base(PATH, Position, Dimensions)
@@ -46,9 +46,9 @@ namespace Synth_Project
             return false;
         }
 
-        public override void Draw() 
+        public override void Draw(Vector2 OFFSET) 
         {
-            base.Draw();
+            base.Draw(OFFSET);
         }
     }    
 }

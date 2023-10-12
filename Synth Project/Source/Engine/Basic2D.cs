@@ -33,12 +33,12 @@ namespace Synth_Project.Source.Engine
 
         }
 
-        public virtual void Draw()
+        public virtual void Draw(Vector2 OFFSET)
         {
             if(Texture != null)
             {
                 Globals.spriteBatch.Draw(Texture,
-                    Position, new Rectangle(0,0,(int)Dimensions.X,(int)Dimensions.Y),
+                    new Vector2(Position.X+OFFSET.X,Position.Y+OFFSET.Y), new Rectangle(0,0,(int)Dimensions.X,(int)Dimensions.Y),
                     Color.White, 0f, new Vector2(Texture.Bounds.Width/2,Texture.Bounds.Height/2), 0.1f, spriteEffects,0f);
             }
         }
