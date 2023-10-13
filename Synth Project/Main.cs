@@ -43,7 +43,8 @@ namespace Synth_Project
         {
             Globals.spriteBatch = new SpriteBatch(GraphicsDevice);
             Globals.content = this.Content;
-            Globals.keyboard = new BaseKeyboard();
+            Globals.inputManager = new();
+            Globals.inputManager.keyboard = new();
 
 
             world = new World();
@@ -63,11 +64,11 @@ namespace Synth_Project
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             Globals.gameTime = gameTime;
-            Globals.keyboard.Update();
+            Globals.inputManager.keyboard.Update();
 
             world.Update();
 
-            Globals.keyboard.UpdateOld();
+            Globals.inputManager.keyboard.UpdateOld();
 
 
             // TODO: Add your update logic here

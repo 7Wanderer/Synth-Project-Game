@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
+using Synth_Project.Source.Engine.Input;
 #endregion
 
 namespace Synth_Project
@@ -25,7 +26,7 @@ namespace Synth_Project
         public static ContentManager content;
         public static SpriteBatch spriteBatch;
 
-        public static BaseKeyboard keyboard;
+        public static InputManager inputManager;
 
         public static GameTime gameTime;
 

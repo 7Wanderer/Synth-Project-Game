@@ -40,3 +40,45 @@ D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\
 D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Assets\Sprites\testSprite.xnb
 D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Tiles\Floor\Alpha 1.xnb
 D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Assets\Tiles\Floor\Alpha 1.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.csproj.AssemblyReference.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.AssemblyInfoInputs.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.AssemblyInfo.cs
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.csproj.CoreCompileInputs.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\refint\Synth Project.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.pdb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Assets\Sprites\testSprite.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Assets\Tiles\Floor\Alpha 1.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\testSprite.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\walk cycle template.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Tiles\Floor\Alpha 1.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Synth Project.exe
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Synth Project.deps.json
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Synth Project.runtimeconfig.json
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Synth Project.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Synth Project.pdb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.csproj.CopyComplete
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.genruntimeconfig.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\ref\Synth Project.dll

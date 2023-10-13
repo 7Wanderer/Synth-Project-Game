@@ -23,8 +23,8 @@ namespace Synth_Project
 
         public void SetBounds(Point mapSize,Point tileSize)
         {
-            minPos = new((-tileSize.X / 2) + origin.X, (-tileSize.Y / 2) + origin.Y);
-            maxPos = new(mapSize.X - (tileSize.X / 2) - origin.X, mapSize.Y - (tileSize.Y / 2) - origin.Y);
+            minPos = new((-tileSize.X / 2) + (origin.X*scale), (-tileSize.Y / 2) + (origin.Y*scale));
+            maxPos = new(mapSize.X - (tileSize.X / 2) - (origin.X*scale), mapSize.Y - (tileSize.Y / 2) - (origin.Y * scale));
         }
 
         public override void Update()

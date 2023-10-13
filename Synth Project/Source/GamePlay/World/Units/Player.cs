@@ -22,14 +22,14 @@ namespace Synth_Project
         }
         public override void Update()
         {
-            if (Globals.keyboard.GetPress("W")) Position.Y -= speed * 0.8f;
-            if (Globals.keyboard.GetPress("S")) Position.Y += speed * 0.8f;
-            if (Globals.keyboard.GetPress("A")) 
+            if (Globals.inputManager.Up()) Position.Y -= speed * 0.8f;
+            if (Globals.inputManager.Down()) Position.Y += speed * 0.8f;
+            if (Globals.inputManager.Left()) 
             {
                 spriteEffects = SpriteEffects.FlipHorizontally;
                 Position.X -= speed;
             }
-            if (Globals.keyboard.GetPress("D")) 
+            if (Globals.inputManager.Right()) 
             {
                 spriteEffects = SpriteEffects.None;
                 Position.X += speed; 

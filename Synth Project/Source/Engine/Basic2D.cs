@@ -28,7 +28,7 @@ namespace Synth_Project.Source.Engine
             this.Dimensions = Dimensions;
 
             Texture = Globals.content.Load<Texture2D>(PATH);
-            origin = new(Texture.Bounds.Width/2, Texture.Bounds.Height/2);
+            origin = new(Texture.Width/2, Texture.Height/2);
         }
 
         public virtual void Update()
