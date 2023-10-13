@@ -30,7 +30,6 @@
     <Folder Include="Content\Assets\Misc\" />
     <Folder Include="Content\Assets\Portraits\" />
     <Folder Include="Content\Audio\" />
-    <Folder Include="Content\bin\Windows\Content\" />
     <Folder Include="Content\Fonts\" />
   </ItemGroup>
   <Target Name="RestoreDotnetTools" BeforeTargets="Restore">

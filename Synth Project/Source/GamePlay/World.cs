@@ -19,11 +19,13 @@ namespace Synth_Project.Source.GamePlay
 
         public Player player;
         public List<Projectile2D> projectiles = new();
+        public Floor floor;
 
         public World()
         {
             player = new Player("Assets\\Sprites\\testSprite", new Vector2(300, 300), new Vector2(640, 1080));
-
+            floor = new();
+            player.SetBounds(floor.mapSize, floor.tileSize);
             GameGlobals.PassProjectile = AddProjectile;
         }
 
@@ -44,6 +46,7 @@ namespace Synth_Project.Source.GamePlay
 
         public virtual void Draw(Vector2 OFFSET)
         {
+            floor.Draw(OFFSET);
             foreach (Projectile2D projectile in projectiles)
             {
                 projectile.Draw(offset);

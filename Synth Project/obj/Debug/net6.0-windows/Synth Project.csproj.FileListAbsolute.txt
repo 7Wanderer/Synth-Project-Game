@@ -38,3 +38,5 @@ D:\synth project game\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\
 D:\synth project game\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\ref\Synth Project.dll
 D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\testSprite.xnb
 D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Assets\Sprites\testSprite.xnb
+D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Tiles\Floor\Alpha 1.xnb
+D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Assets\Tiles\Floor\Alpha 1.xnb

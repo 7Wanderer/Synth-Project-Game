@@ -15,14 +15,21 @@ namespace Synth_Project
 {
     public class Unit : Basic2D
     {
+        public Vector2 minPos, maxPos;
         public Unit(string PATH, Vector2 Position, Vector2 Dimensions) : base(PATH, Position, Dimensions)
         {
 
         }
 
+        public void SetBounds(Point mapSize,Point tileSize)
+        {
+            minPos = new((-tileSize.X / 2) + origin.X, (-tileSize.Y / 2) + origin.Y);
+            maxPos = new(mapSize.X - (tileSize.X / 2) - origin.X, mapSize.Y - (tileSize.Y / 2) - origin.Y);
+        }
+
         public override void Update()
         {
-
+            Position = Vector2.Clamp(Position, minPos, maxPos);
             base.Update();
         }
 

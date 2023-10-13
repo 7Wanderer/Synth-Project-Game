@@ -20,7 +20,6 @@ namespace Synth_Project
         {
 
         }
-
         public override void Update()
         {
             if (Globals.keyboard.GetPress("W")) Position.Y -= speed * 0.8f;

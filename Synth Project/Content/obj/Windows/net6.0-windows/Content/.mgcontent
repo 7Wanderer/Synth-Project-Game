@@ -5,8 +5,10 @@
   <Config />
   <SourceFiles>
     <File>D:/synth project game/Synth-Project-Game/Synth Project/Content/../../Prototypes/assets/Sprites/Syn/walk cycle template.png</File>
+    <File>D:/synth project game/Synth-Project-Game/Synth Project/Content/Tiles/Floor/Alpha 1.png</File>
   </SourceFiles>
   <DestFiles>
     <File>Assets/Sprites/testSprite.png</File>
+    <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
