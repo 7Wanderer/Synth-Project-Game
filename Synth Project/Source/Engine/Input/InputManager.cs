@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Permissions;
@@ -15,8 +17,7 @@ namespace Synth_Project.Source.Engine.Input
         public bool Left()
         {
             if (keyboard.GetPress("A")
-                
-
+                || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X <= -0.5
 
                 ) return true;
             return false;
@@ -24,6 +25,7 @@ namespace Synth_Project.Source.Engine.Input
         public bool Right() 
         {
             if (keyboard.GetPress("D")
+                || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.X >= 0.5
 
 
 
@@ -33,6 +35,7 @@ namespace Synth_Project.Source.Engine.Input
         public bool Up() 
         {
             if (keyboard.GetPress("W")
+                || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.Y >= 0.5
 
 
 
@@ -42,6 +45,7 @@ namespace Synth_Project.Source.Engine.Input
         public bool Down()
         {
             if (keyboard.GetPress("S")
+                || GamePad.GetState(PlayerIndex.One).ThumbSticks.Left.Y <= -0.5
 
 
 
@@ -51,7 +55,7 @@ namespace Synth_Project.Source.Engine.Input
         public bool Blink()
         {
             if (keyboard.GetPress("Q")
-
+                || GamePad.GetState(PlayerIndex.One).Triggers.Left >= 0.5
 
 
                 ) return true;
@@ -60,6 +64,7 @@ namespace Synth_Project.Source.Engine.Input
         public bool Attack()
         {
             if (keyboard.GetPress("E")
+                || GamePad.GetState(PlayerIndex.One).Triggers.Right >= 0.5
 
 
 

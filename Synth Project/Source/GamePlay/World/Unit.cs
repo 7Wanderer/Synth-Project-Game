@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 using Synth_Project.Source.Engine;
+using SharpDX.MediaFoundation;
 #endregion
 
 namespace Synth_Project
@@ -21,16 +22,16 @@ namespace Synth_Project
 
         }
 
-        public void SetBounds(Point mapSize,Point tileSize)
+        public void SetBounds(Point mapSize,Point tileSize, Vector2 Position)
         {
-            minPos = new((-tileSize.X / 2) + (origin.X*scale), (-tileSize.Y / 2) + (origin.Y*scale));
-            maxPos = new(mapSize.X - (tileSize.X / 2) - (origin.X*scale), mapSize.Y - (tileSize.Y / 2) - (origin.Y * scale));
+            minPos = new((-tileSize.X / 2) + (origin.X*scale) + Position.X, (-tileSize.Y / 2) + (origin.Y*scale) + Position.Y);
+            maxPos = new(mapSize.X + (tileSize.X / 2) - (origin.X*scale) +Position.X, mapSize.Y - (tileSize.Y / 2) - (origin.Y * scale) + Position.Y);
         }
 
-        public override void Update()
+        public override void Update(Vector2 OFFSET)
         {
             Position = Vector2.Clamp(Position, minPos, maxPos);
-            base.Update();
+            base.Update(OFFSET);
         }
 
         public override void Draw(Vector2 OFFSET)

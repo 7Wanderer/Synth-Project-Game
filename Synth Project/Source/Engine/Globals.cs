@@ -21,7 +21,7 @@ namespace Synth_Project
     {
         public static int screenWidth, screenHeight;
 
-
+        public static SpriteFont gameFont;
 
         public static ContentManager content;
         public static SpriteBatch spriteBatch;

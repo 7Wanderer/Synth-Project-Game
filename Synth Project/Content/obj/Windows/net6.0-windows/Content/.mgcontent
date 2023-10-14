@@ -4,11 +4,13 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/j44nj/Documents/git/Synth-Project-Game/Synth Project/Content/../../Prototypes/assets/Sprites/Syn/walk cycle template.png</File>
-    <File>C:/Users/j44nj/Documents/git/Synth-Project-Game/Synth Project/Content/Tiles/Floor/Alpha 1.png</File>
+    <File>D:/synth project game/Synth-Project-Game/Synth Project/Content/../../Prototypes/assets/Sprites/Syn/walk cycle template.png</File>
+    <File>D:/synth project game/Synth-Project-Game/Synth Project/Content/Assets/Misc/defaultFont.spritefont</File>
+    <File>D:/synth project game/Synth-Project-Game/Synth Project/Content/Tiles/Floor/Alpha 1.png</File>
   </SourceFiles>
   <DestFiles>
     <File>Assets/Sprites/testSprite.png</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

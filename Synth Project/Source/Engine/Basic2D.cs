@@ -20,7 +20,7 @@ namespace Synth_Project.Source.Engine
 
         public SpriteEffects spriteEffects = SpriteEffects.None;
 
-        public float scale = 0.1f;
+        public float scale = 1f;
 
         public Basic2D(string PATH, Vector2 Position, Vector2 Dimensions)
         {
@@ -31,7 +31,7 @@ namespace Synth_Project.Source.Engine
             origin = new(Texture.Width/2, Texture.Height/2);
         }
 
-        public virtual void Update()
+        public virtual void Update(Vector2 OFFSET)
         {
 
         }

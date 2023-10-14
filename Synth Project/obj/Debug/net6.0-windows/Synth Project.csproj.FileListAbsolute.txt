@@ -82,3 +82,4 @@ C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\bin\Debug\net6.0-w
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.csproj.CopyComplete
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\Synth Project.genruntimeconfig.cache
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Synth Project\obj\Debug\net6.0-windows\ref\Synth Project.dll
+D:\synth project game\Synth-Project-Game\Synth Project\bin\Debug\net6.0-windows\Content\Assets\Misc\defaultFont.xnb

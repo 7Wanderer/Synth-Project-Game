@@ -45,6 +45,7 @@ namespace Synth_Project
             Globals.content = this.Content;
             Globals.inputManager = new();
             Globals.inputManager.keyboard = new();
+            Globals.gameFont = Content.Load<SpriteFont>("Assets\\Misc\\defaultFont");
 
 
             world = new World();

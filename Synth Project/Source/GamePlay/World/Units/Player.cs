@@ -18,28 +18,43 @@ namespace Synth_Project
         public float speed = 5f;
         public Player(string PATH, Vector2 Position, Vector2 Dimensions) : base(PATH, Position, Dimensions)
         {
-
+            scale = 0.2f;
         }
-        public override void Update()
+        public override void Update(Vector2 OFFSET)
         {
-            if (Globals.inputManager.Up()) Position.Y -= speed * 0.8f;
-            if (Globals.inputManager.Down()) Position.Y += speed * 0.8f;
+            bool checkScroll = false;
+            if (Globals.inputManager.Up()) 
+            { 
+                Position.Y -= speed * 0.8f;
+                checkScroll = true;
+            }
+            if (Globals.inputManager.Down())
+            { 
+                Position.Y += speed * 0.8f;
+                checkScroll = true;
+            }
             if (Globals.inputManager.Left()) 
             {
                 spriteEffects = SpriteEffects.FlipHorizontally;
                 Position.X -= speed;
+                checkScroll = true;
             }
             if (Globals.inputManager.Right()) 
             {
                 spriteEffects = SpriteEffects.None;
-                Position.X += speed; 
+                Position.X += speed;
+                checkScroll = true;
             }
-
-            base.Update();
+            if(checkScroll)
+            {
+                GameGlobals.CheckScroll(Position);
+            }
+            base.Update(OFFSET);
         }
 
         public override void Draw(Vector2 OFFSET)
         {
+            Globals.spriteBatch.DrawString(Globals.gameFont, "Player: "+Position.ToString(), new(0, 50), Color.White);
             base.Draw(OFFSET);
         }
 

@@ -24,15 +24,15 @@ namespace Synth_Project.Source.GamePlay
         public World()
         {
             player = new Player("Assets\\Sprites\\testSprite", new Vector2(300, 300), new Vector2(640, 1080));
-            floor = new();
-            player.SetBounds(floor.mapSize, floor.tileSize);
+            floor = new(Globals.screenHeight-400);
+            player.SetBounds(floor.mapSize, floor.tileSize, floor.position);
             GameGlobals.PassProjectile = AddProjectile;
+            GameGlobals.CheckScroll = CheckScroll;
         }
 
         public virtual void Update()
         {
-            player.Update();
-
+            player.Update(offset);
             foreach(Projectile2D projectile in projectiles) 
             { 
                 projectile.Update(offset, null);
@@ -43,15 +43,28 @@ namespace Synth_Project.Source.GamePlay
         {
             projectiles.Add((Projectile2D)INFO);
         }
-
+        public virtual void CheckScroll(object INFO)
+        {
+            Vector2 tempPos = (Vector2)INFO;
+            if (tempPos.X < -offset.X + Globals.screenWidth *.4f
+                && tempPos.X >= Globals.screenWidth/2)
+            {
+                offset = new(offset.X + player.speed,offset.Y);
+            }
+            if (tempPos.X > -offset.X + Globals.screenWidth * .6f
+                && tempPos.X <= floor.mapSize.X-Globals.screenWidth / 2)
+            {
+                offset = new(offset.X - player.speed, offset.Y);
+            }
+        }
         public virtual void Draw(Vector2 OFFSET)
         {
-            floor.Draw(OFFSET);
+            floor.Draw(offset);
             foreach (Projectile2D projectile in projectiles)
             {
                 projectile.Draw(offset);
             }
-            player.Draw(OFFSET);
+            player.Draw(offset);
         }
     }
 }

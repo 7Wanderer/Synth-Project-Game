@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>D:/synth project game/Synth-Project-Game/Synth Project/Content/Assets/Misc/defaultFont.spritefont</SourceFile>
+  <SourceTime>2023-05-17T13:34:42.0219324+01:00</SourceTime>
+  <DestFile>D:/synth project game/Synth-Project-Game/Synth Project/Content/bin/Windows/Assets/Misc/defaultFont.xnb</DestFile>
+  <DestTime>2023-10-14T16:29:22.7319801+01:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2022-07-26T12:44:56+01:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

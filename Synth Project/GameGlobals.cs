@@ -15,6 +15,6 @@ namespace Synth_Project
 {
     public class GameGlobals
     {
-        public static PassObject PassProjectile; 
+        public static PassObject PassProjectile, CheckScroll; 
     }
 }
