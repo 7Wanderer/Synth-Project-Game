@@ -38,3 +38,47 @@ D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows
 D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Fonts\defaultFont.xnb
 D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Sprites\Syn\testSprite.xnb
 D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Tiles\Alpha 1.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Fonts\defaultFont.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Sprites\Syn\testSprite.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Tiles\Alpha 1.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.exe
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.deps.json
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.runtimeconfig.json
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.pdb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.csproj.AssemblyReference.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.AssemblyInfoInputs.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.AssemblyInfo.cs
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.csproj.CoreCompileInputs.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.csproj.CopyComplete
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\refint\Post Synthesis.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.pdb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.genruntimeconfig.cache
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\ref\Post Synthesis.dll
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\Background1.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\far.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\mid.xnb
+C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\near.xnb

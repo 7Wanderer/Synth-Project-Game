@@ -21,14 +21,15 @@ namespace Post_Synthesis
         public Background(string PATH, Vector2 Position, Vector2 Dimensions, List<Texture2D> parallaxTextures) : base(PATH, Position, Dimensions)
         {
             this.parallaxTextures = parallaxTextures;
+            this.origin = new(0, 0);
         }
         public override void Draw(Vector2 OFFSET)
         {
-            base.Draw(OFFSET); 
+            base.Draw(new());
             for (int i = 0; i < parallaxTextures.Count; i++)
             {
                 Globals.spriteBatch.Draw(parallaxTextures[i], Position + OFFSET / (parallaxTextures.Count - i), Color.White);
-            }
+            } 
         }
     }
 }

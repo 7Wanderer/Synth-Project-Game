@@ -26,7 +26,11 @@ namespace Post_Synthesis.Source
         {
             player = new Player("Assets\\Sprites\\Syn\\testSprite", new Vector2(300, 500), new Vector2(640, 1080));
             floor = new(Globals.screenHeight-400);
-            // background = new("", new(0, 0),new(),new());
+            List<Texture2D> t = new();
+            t.Add(Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\far"));
+            t.Add(Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\mid"));
+            t.Add(Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\near"));
+            background = new("Assets\\World\\Backgrounds\\Background1", new(0, 0),new(1600,900),t);
             player.SetBounds(floor.mapSize, floor.tileSize, floor.position);
             GameGlobals.PassProjectile = AddProjectile;
             GameGlobals.CheckScroll = CheckScroll;
@@ -61,6 +65,7 @@ namespace Post_Synthesis.Source
         }
         public virtual void Draw(Vector2 OFFSET)
         {
+            background.Draw(offset);
             floor.Draw(offset);
             foreach (Projectile2D projectile in projectiles)
             {
