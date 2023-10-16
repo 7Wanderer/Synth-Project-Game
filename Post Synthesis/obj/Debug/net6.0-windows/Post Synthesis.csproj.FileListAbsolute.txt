@@ -1,0 +1,40 @@
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.exe
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.deps.json
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.runtimeconfig.json
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Post Synthesis.pdb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.csproj.AssemblyReference.cache
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.GeneratedMSBuildEditorConfig.editorconfig
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.AssemblyInfoInputs.cache
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.AssemblyInfo.cs
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.csproj.CoreCompileInputs.cache
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.csproj.CopyComplete
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\refint\Post Synthesis.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.pdb
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.genruntimeconfig.cache
+D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\ref\Post Synthesis.dll
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Fonts\defaultFont.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Sprites\Syn\testSprite.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Tiles\Alpha 1.xnb

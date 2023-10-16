@@ -1,4 +1,0 @@
-Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/synth project game/Synth-Project-Game/Synth Project/Content/../../Prototypes/assets/Sprites/Syn/walk cycle template.png","D:/synth project game/Synth-Project-Game/Synth Project/Content/bin/Windows/Assets/Sprites/testSprite.xnb","TextureProcessor","Texture2DContent",185779,5529685,0.3947328
-"D:/synth project game/Synth-Project-Game/Synth Project/Content/Assets/Misc/defaultFont.spritefont","D:/synth project game/Synth-Project-Game/Synth Project/Content/bin/Windows/Assets/Misc/defaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",414,37919,0.1611308
-"D:/synth project game/Synth-Project-Game/Synth Project/Content/Tiles/Floor/Alpha 1.png","D:/synth project game/Synth-Project-Game/Synth Project/Content/bin/Windows/Tiles/Floor/Alpha 1.xnb","TextureProcessor","Texture2DContent",819,40085,0.0039905
