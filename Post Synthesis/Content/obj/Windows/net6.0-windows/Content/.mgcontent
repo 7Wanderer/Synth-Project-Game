@@ -4,9 +4,9 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/j44nj/Documents/git/Synth-Project-Game/Post Synthesis/Content/Assets/Fonts/defaultFont.spritefont</File>
-    <File>C:/Users/j44nj/Documents/git/Synth-Project-Game/Post Synthesis/Content/Assets/Sprites/Syn/walk cycle template.png</File>
-    <File>C:/Users/j44nj/Documents/git/Synth-Project-Game/Post Synthesis/Content/Assets/World/Tiles/Alpha 1.png</File>
+    <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/Assets/Fonts/defaultFont.spritefont</File>
+    <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/Assets/Sprites/Syn/walk cycle template.png</File>
+    <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/Assets/World/Tiles/Alpha 1.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

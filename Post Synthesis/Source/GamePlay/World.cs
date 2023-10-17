@@ -55,12 +55,12 @@ namespace Post_Synthesis.Source
             if (tempPos.X < -offset.X + Globals.screenWidth *.4f
                 && tempPos.X >= Globals.screenWidth/2)
             {
-                offset = new(offset.X + player.speed,offset.Y);
+                offset = new(offset.X + player.speed*2,offset.Y);
             }
             if (tempPos.X > -offset.X + Globals.screenWidth * .6f
                 && tempPos.X <= floor.mapSize.X-Globals.screenWidth / 2)
             {
-                offset = new(offset.X - player.speed, offset.Y);
+                offset = new(offset.X - player.speed*2, offset.Y);
             }
         }
         public virtual void Draw(Vector2 OFFSET)

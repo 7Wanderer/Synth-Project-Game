@@ -12,7 +12,7 @@ namespace Visual_novel_alpha
     {
         Texture2D texture;
         SpriteFont gameFont;
-        Vector2 position = new(60, 800);
+        Vector2 position = new(540, 800);
         string text = "";
 
         bool hidden = false;
@@ -33,15 +33,9 @@ namespace Visual_novel_alpha
         }
         public void Draw(SpriteBatch spriteBatch)
         {
-            /*
-            spriteBatch.Draw(spriteTextureSheets[((int)animation)],
-                spritePosition,
-                getRectFromTexture(),
-                Color.White, 0, new Vector2(), SPRITE_SCALE, isReversed, 0);
-            */
             if (!hidden) 
-            { 
-                spriteBatch.Draw(texture, position, Color.White);
+            {
+                spriteBatch.Draw(texture, position, null, Color.White, 0, new Vector2(), new Vector2(0.5f,1), SpriteEffects.None, 0f); ;
                 spriteBatch.DrawString(gameFont, text, new Vector2(position.X+80,position.Y+25), Color.Black);
             }
         }

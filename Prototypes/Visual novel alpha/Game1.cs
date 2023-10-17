@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Visual_novel_alpha.scripts;
 using System.Linq;
 using System;
 using System.Collections.Generic;
+using Visual_novel_alpha.Scripts;
 
 namespace Visual_novel_alpha
 {
@@ -13,8 +13,11 @@ namespace Visual_novel_alpha
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        Actor player1;
-        Textbox textbox;
+        public static Actor player1;
+        public static Textbox textbox;
+
+        ScriptManager scriptManagerInstance;
+        script1 script1 = new();
 
         public SpriteFont gameFont;
 
@@ -47,6 +50,8 @@ namespace Visual_novel_alpha
             player1 = new(portraitAlpha);
             textbox = new(textboxTexture, gameFont);
 
+            scriptManagerInstance = new(script1);
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -57,7 +62,7 @@ namespace Visual_novel_alpha
 
             // TODO: Add your update logic here
 
-            new testScript(new List<Actor>{player1}.ToArray(),textbox).Run(gameTime);
+            scriptManagerInstance.Update(gameTime);
 
 
             base.Update(gameTime);

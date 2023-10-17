@@ -37,7 +37,7 @@ namespace Visual_novel_alpha
         //constants (had to define with readonly because i'm a bitch)
         // readonly int SPRITE_WIDTH = 480, SPRITE_HEIGHT=960;
         // readonly float SPRITE_SCALE = 1;
-        readonly int PORTRAIT_WIDTH = 0, PORTRAIT_HEIGHT;
+        readonly int PORTRAIT_WIDTH = 480, PORTRAIT_HEIGHT=960;
         readonly float PORTRAIT_SCALE = 1;
 
         readonly Vector2 DEFAULT = new(80,80);
@@ -56,19 +56,19 @@ namespace Visual_novel_alpha
         // SpriteEffects isReversed;
         SpriteEffects portraitReversed = SpriteEffects.None;
 
-        bool hidden = true, portraitHidden = true;
+        bool hidden = true, portraitHidden = false;
 
         public void SetFace(Portraits portrait, bool Reversed)
         {
             this.portrait = portrait;
             if(Reversed)
             {
-                portraitReversed = SpriteEffects.FlipHorizontally;
+                portraitReversed = SpriteEffects.None;
                 portraitPosition = DEFAULT_REVERSE;
             }
             else
             {
-                portraitReversed = SpriteEffects.None;
+                portraitReversed = SpriteEffects.FlipHorizontally;
                 portraitPosition = DEFAULT;
             }
         }
@@ -106,8 +106,7 @@ namespace Visual_novel_alpha
                 Color.White, 0, new Vector2(), SPRITE_SCALE, isReversed, 0);
             */
             if(!portraitHidden)
-                spriteBatch.Draw(portraitTextureSheet,
-                    portraitPosition,
+                spriteBatch.Draw(portraitTextureSheet, portraitPosition,
                     getRectFromPortrait(),
                     Color.White, 0, new Vector2(), PORTRAIT_SCALE, portraitReversed, 0);
         }

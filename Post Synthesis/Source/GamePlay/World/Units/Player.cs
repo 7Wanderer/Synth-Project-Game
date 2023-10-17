@@ -45,6 +45,19 @@ namespace Post_Synthesis
                 Position.X += speed;
                 checkScroll = true;
             }
+            if(Globals.inputManager.Blink())
+            {
+                if(spriteEffects == SpriteEffects.None)
+                {
+                    Position.X += speed * 30;
+                    checkScroll = true;
+                }
+                else
+                {
+                    Position.X -= speed * 30;
+                    checkScroll = true;
+                }
+            }
             if(checkScroll)
             {
                 GameGlobals.CheckScroll(Position);

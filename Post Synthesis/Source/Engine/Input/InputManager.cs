@@ -15,6 +15,7 @@ namespace Post_Synthesis
     public class InputManager
     {
         public BaseKeyboard keyboard = new();
+        bool blinkOnce = false;
         public InputManager() { }
 
         public bool Left()
@@ -57,12 +58,18 @@ namespace Post_Synthesis
         }
         public bool Blink()
         {
-            if (keyboard.GetPress("Q")
+            if (!keyboard.GetPress("Q")) blinkOnce = false;
+            if ((keyboard.GetPress("Q")
                 || GamePad.GetState(PlayerIndex.One).Triggers.Left >= 0.5
 
-
-                ) return true;
+                    ) && !blinkOnce
+                ) 
+            { 
+                blinkOnce = true;
+                return true;
+            }
             return false;
+
         }
         public bool Attack()
         {

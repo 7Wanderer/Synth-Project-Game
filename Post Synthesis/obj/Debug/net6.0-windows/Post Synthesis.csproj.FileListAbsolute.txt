@@ -82,3 +82,7 @@ C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\far.xnb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\mid.xnb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\near.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\Background1.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\far.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\mid.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\near.xnb
