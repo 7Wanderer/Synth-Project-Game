@@ -21,6 +21,7 @@ namespace Post_Synthesis
         public SpriteEffects spriteEffects = SpriteEffects.None;
 
         public float scale = 1f;
+        public int newDimX;
 
         public Basic2D(string PATH, Vector2 Position, Vector2 Dimensions)
         {
@@ -28,12 +29,17 @@ namespace Post_Synthesis
             this.Dimensions = Dimensions;
 
             Texture = Globals.content.Load<Texture2D>(PATH);
-            origin = new(Texture.Width/2, Texture.Height/2);
+            origin = new(Dimensions.X/2, Dimensions.Y/2);
         }
 
+        public bool checkIfFlipped()
+        {
+            return spriteEffects == SpriteEffects.FlipHorizontally;
+        }
         public virtual void Update(Vector2 OFFSET)
         {
-
+            if (checkIfFlipped()) origin = new((Dimensions.X + 2*newDimX) / 2, Dimensions.Y / 2);
+            else origin = new(Dimensions.X / 2, Dimensions.Y / 2);
         }
 
         public virtual void Draw(Vector2 OFFSET)
@@ -41,7 +47,7 @@ namespace Post_Synthesis
             if(Texture != null)
             {
                 Globals.spriteBatch.Draw(Texture,
-                    new Vector2(Position.X+OFFSET.X,Position.Y+OFFSET.Y), new Rectangle(0,0,(int)Dimensions.X,(int)Dimensions.Y),
+                    new Vector2(Position.X+OFFSET.X,Position.Y+OFFSET.Y), new Rectangle(newDimX,0,(int)Dimensions.X+newDimX,(int)Dimensions.Y),
                     Color.White, 0f, origin, scale, spriteEffects,0f);
             }
         }

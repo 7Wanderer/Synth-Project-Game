@@ -15,7 +15,7 @@ namespace Post_Synthesis
     public class InputManager
     {
         public BaseKeyboard keyboard = new();
-        bool blinkOnce = false;
+        bool blinkOnce = false, continueOnce = false;
         public InputManager() { }
 
         public bool Left()
@@ -79,6 +79,21 @@ namespace Post_Synthesis
 
 
                 ) return true;
+            return false;
+        }
+        public bool Continue()
+        {
+            if (!keyboard.GetPress("Space")) continueOnce = false;
+            if ((keyboard.GetPress("Space")
+                || GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed
+
+                    ) && !continueOnce
+
+                ) 
+            {
+                continueOnce = true;
+                return true;
+            }
             return false;
         }
     }

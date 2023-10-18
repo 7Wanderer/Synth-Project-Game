@@ -13,37 +13,69 @@ using Post_Synthesis.Source;
 
 namespace Post_Synthesis
 {
+
+    public enum AnimationState
+    {
+        Moving,
+        MovingYOnly,
+        Idle,
+        Attack
+    }
     public class Player : Unit
     {
         public float speed = 5f;
+        float timeBetweenTextures = 100;
+        float timeLeft = 0;
         public Player(string PATH, Vector2 Position, Vector2 Dimensions) : base(PATH, Position, Dimensions)
         {
-            scale = 0.2f;
+           newDimX = 0;
+        }
+
+        void isMoving()
+        {
+            timeLeft += (float)Globals.gameTime.ElapsedGameTime.TotalMilliseconds;
+            if (timeLeft >= timeBetweenTextures)
+            {
+                timeLeft = 0;
+                if (newDimX == Texture.Width - Dimensions.X)
+                {
+                    newDimX = 0;
+                }
+                else
+                {
+                    newDimX += (int)Dimensions.X;
+                }
+            }
         }
         public override void Update(Vector2 OFFSET)
         {
+            
             bool checkScroll = false;
             if (Globals.inputManager.Up()) 
             { 
                 Position.Y -= speed * 0.8f;
                 checkScroll = true;
+                isMoving();
             }
             if (Globals.inputManager.Down())
             { 
                 Position.Y += speed * 0.8f;
                 checkScroll = true;
+                isMoving();
             }
             if (Globals.inputManager.Left()) 
             {
                 spriteEffects = SpriteEffects.FlipHorizontally;
                 Position.X -= speed;
                 checkScroll = true;
+                isMoving();
             }
             if (Globals.inputManager.Right()) 
             {
                 spriteEffects = SpriteEffects.None;
                 Position.X += speed;
                 checkScroll = true;
+                isMoving();
             }
             if(Globals.inputManager.Blink())
             {

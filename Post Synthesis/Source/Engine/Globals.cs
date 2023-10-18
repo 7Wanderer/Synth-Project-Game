@@ -27,6 +27,7 @@ namespace Post_Synthesis
         public static SpriteBatch spriteBatch;
 
         public static InputManager inputManager;
+        public static ScriptManager scriptManager;
 
         public static GameTime gameTime;
 

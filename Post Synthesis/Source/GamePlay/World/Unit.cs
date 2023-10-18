@@ -24,8 +24,8 @@ namespace Post_Synthesis
 
         public void SetBounds(Point mapSize,Point tileSize, Vector2 Position)
         {
-            minPos = new((-tileSize.X / 2) + (origin.X*scale) + Position.X, (-tileSize.Y / 2) + (origin.Y*scale) + Position.Y);
-            maxPos = new(mapSize.X + (tileSize.X / 2) - (origin.X*scale) +Position.X, mapSize.Y - (tileSize.Y / 2) - (origin.Y * scale) + Position.Y);
+            minPos = new((-tileSize.X / 2) + origin.X + Position.X, (-tileSize.Y / 2) + Position.Y);
+            maxPos = new(mapSize.X + (tileSize.X / 2) - origin.X +Position.X, mapSize.Y - (tileSize.Y / 2) - origin.Y + Position.Y);
         }
 
         public override void Update(Vector2 OFFSET)

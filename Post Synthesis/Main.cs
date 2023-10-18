@@ -46,9 +46,14 @@ namespace Post_Synthesis
             Globals.inputManager = new();
             Globals.inputManager.keyboard = new();
             Globals.gameFont = Content.Load<SpriteFont>("Assets\\Fonts\\defaultFont");
-
+            Globals.scriptManager = new(new TestScript1(),new List<Actor>()
+            {
+                new Actor(Content.Load<Texture2D>("Assets\\Portraits\\syn alpha"),null,"Syn")
+            });
+            
 
             world = new World();
+            
 
 
             // TODO: use this.Content to load your game content here
@@ -65,9 +70,12 @@ namespace Post_Synthesis
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             Globals.gameTime = gameTime;
+
             Globals.inputManager.keyboard.Update();
 
-            world.Update();
+            if (Globals.scriptManager == null)
+                world.Update();
+            else Globals.scriptManager.Update();
 
             Globals.inputManager.keyboard.UpdateOld();
 
@@ -84,7 +92,7 @@ namespace Post_Synthesis
             Globals.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
 
             world.Draw(Vector2.Zero);
-
+            if (Globals.scriptManager != null) Globals.scriptManager.Draw();
 
 
             Globals.spriteBatch.End();
