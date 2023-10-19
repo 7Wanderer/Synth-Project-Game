@@ -18,6 +18,7 @@ namespace Post_Synthesis.Source
         public Vector2 offset = new(0,0);
 
         public Player player;
+        public Unit testEnemy;
         public List<Projectile2D> projectiles = new();
         public Floor floor;
         public Background background;
@@ -25,6 +26,7 @@ namespace Post_Synthesis.Source
         public World()
         {
             player = new Player("Assets\\Sprites\\Syn\\test sprite", new Vector2(300, 500), new Vector2(128, 216));
+            testEnemy = new Unit("Assets\\Sprites\\test enemy",new Vector2(700,500),new Vector2(128,216));
             floor = new(Globals.screenHeight-400);
             List<Texture2D> t = new()
             {
