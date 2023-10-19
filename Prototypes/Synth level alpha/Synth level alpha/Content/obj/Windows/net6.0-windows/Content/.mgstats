@@ -1,9 +1,0 @@
-Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/File.spritefont","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,70687,0.2555135
-"D:/Pictures/art/Synth Project/1-2 stickfigure.png","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/1-2 stickfigure.xnb","TextureProcessor","Texture2DContent",5386,80085,0.1809889
-"D:/Pictures/art/Synth Project/Background1.png","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/Background1.xnb","TextureProcessor","Texture2DContent",46962,8294485,0.4643465
-"D:/Pictures/art/Synth Project/parallax1/far.png","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/far.xnb","TextureProcessor","Texture2DContent",53792,8294485,0.4245308
-"D:/Pictures/art/Synth Project/parallax1/mid.png","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/mid.xnb","TextureProcessor","Texture2DContent",46531,8294485,0.2990212
-"D:/Pictures/art/Synth Project/parallax1/near.png","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/near.xnb","TextureProcessor","Texture2DContent",44564,8294485,0.4045355
-"D:/Pictures/art/Synth Project/terrain1.png","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/terrain1.xnb","TextureProcessor","Texture2DContent",89810,8294485,0.3945793
-"D:/Pictures/art/Synth Project/terrain2.png","C:/Users/j44nj/source/repos/Synth level alpha/Synth level alpha/Content/bin/Windows/Content/terrain2.xnb","TextureProcessor","Texture2DContent",144749,16588885,0.6866308

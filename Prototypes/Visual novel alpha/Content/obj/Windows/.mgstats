@@ -1,4 +1,0 @@
-Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/defaultFont.spritefont","D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/bin/Windows/defaultFont.xnb","FontDescriptionProcessor","SpriteFontContent",414,37919,0.2892355
-"D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/Syn neutral.png","D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/bin/Windows/Syn neutral.xnb","TextureProcessor","Texture2DContent",150021,1843285,0.2980272
-"D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/VN Text box.png","D:/synth project game/Synth-Project-Game/Prototypes/Visual novel alpha/Content/bin/Windows/VN Text box.xnb","TextureProcessor","Texture2DContent",14925,1728085,0.2347323
