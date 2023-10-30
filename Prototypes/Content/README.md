@@ -1,0 +1,1 @@
+This will be where the assets (Art, sprites and every visual aspect of the game) and the audio will be stored.
