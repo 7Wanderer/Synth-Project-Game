@@ -36,7 +36,7 @@ namespace Post_Synthesis
         {
             return spriteEffects == SpriteEffects.FlipHorizontally;
         }
-        public virtual void Update(ref Vector2 OFFSET)
+        public virtual void Update(Vector2 OFFSET)
         {
             if (checkIfFlipped()) origin = new((Dimensions.X + 2*newDimX) / 2, Dimensions.Y / 2);
             /*

@@ -22,9 +22,9 @@ namespace Post_Synthesis
         {
 
         }
-        public override void Update(ref Vector2 OFFSET)
+        public override void Update(Vector2 OFFSET)
         {
-            base.Update(ref OFFSET);
+            base.Update(OFFSET);
         }
         public override void Draw(Vector2 OFFSET)
         {

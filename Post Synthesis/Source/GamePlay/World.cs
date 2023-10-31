@@ -38,11 +38,15 @@ namespace Post_Synthesis.Source
             player.SetBounds(floor.mapSize, floor.tileSize, floor.position);
             GameGlobals.PassProjectile = AddProjectile;
             GameGlobals.CheckScroll = CheckScroll;
+            GameGlobals.CheckBlink = Blink;
         }
-
+        int roundToTen(float number)
+        {
+            return ((int)(number / 10)) * 10;
+        }
         public virtual void Update()
         {
-            player.Update(ref offset);
+            player.Update(offset);
             foreach(Projectile2D projectile in projectiles) 
             { 
                 projectile.Update(offset, null);
@@ -56,18 +60,24 @@ namespace Post_Synthesis.Source
         public virtual void CheckScroll(object INFO)
         {
             Vector2 tempPos = (Vector2)INFO;
-            if (tempPos.X - 160 < -offset.X + Globals.screenWidth *.4f
-                && tempPos.X >= Globals.screenWidth/2)
-            {
-                offset = new(offset.X + player.speed, offset.Y);
-            }
-            if (tempPos.X + 160 > -offset.X + Globals.screenWidth * .6f
-                && tempPos.X <= floor.mapSize.X-Globals.screenWidth / 2)
-            {
-                offset = new(offset.X - player.speed, offset.Y);
-            }
+            if (offset.X < -tempPos.X + Globals.screenWidth *.4f
+                    && offset.X < 0)
+                offset.X += player.speed * 2;
+            else if (offset.X > -tempPos.X + Globals.screenWidth *.6f
+                    && offset.X > -floor.mapSize.X+ Globals.screenWidth)
+                offset.X -= player.speed * 2;
+        }        
+
+        public virtual void Blink(object INFO)
+        {
+            Vector2 tempPos = (Vector2)INFO;
+            if(offset.X < -tempPos.X + Globals.screenWidth / 2
+                    && offset.X < 0)
+                offset.X += roundToTen(player.speed * 3);
+            else if (offset.X > -tempPos.X + Globals.screenWidth / 2
+                    && offset.X > -floor.mapSize.X+ Globals.screenWidth)
+                offset.X -= roundToTen(player.speed * 3);
         }
-        // Current problem - minimum offset is stuck at -160 once entering change for the first time.
         public virtual void Draw(Vector2 OFFSET)
         {
             background.Draw(offset);

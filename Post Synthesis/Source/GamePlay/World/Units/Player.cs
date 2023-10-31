@@ -26,7 +26,7 @@ namespace Post_Synthesis
     {
         public float speed = 5f;
         float timeBetweenTextures = 100;
-        float timeLeft = 0;
+        float timeLeft = 0; float blinkTimer = 5000;
         public Player(string PATH, Vector2 Position, Vector2 Dimensions) : base(PATH, Position, Dimensions)
         {
            newDimX = 0;
@@ -48,9 +48,9 @@ namespace Post_Synthesis
                 }
             }
         }
-        public override void Update(ref Vector2 OFFSET)
+        public override void Update(Vector2 OFFSET)
         {
-
+            blinkTimer += (float)Globals.gameTime.ElapsedGameTime.TotalMilliseconds;
             bool checkScroll = false;
             if (Globals.inputManager.Up()) 
             { 
@@ -58,7 +58,7 @@ namespace Post_Synthesis
                 checkScroll = true;
                 isMoving();
             }
-            if (Globals.inputManager.Down())
+            else if (Globals.inputManager.Down())
             { 
                 Position.Y += speed * 0.8f;
                 checkScroll = true;
@@ -69,34 +69,36 @@ namespace Post_Synthesis
                 spriteEffects = SpriteEffects.FlipHorizontally;
                 Position.X -= speed;
                 checkScroll = true;
-                isMoving();
+                if (!(Globals.inputManager.Up() || Globals.inputManager.Down())) isMoving();
             }
-            if (Globals.inputManager.Right()) 
+            else if (Globals.inputManager.Right()) 
             {
                 spriteEffects = SpriteEffects.None;
                 Position.X += speed;
                 checkScroll = true;
-                isMoving();
+                if (!(Globals.inputManager.Up() || Globals.inputManager.Down())) isMoving();
             }
-            if(Globals.inputManager.Blink())
+            if (Globals.inputManager.Blink() && blinkTimer >= 2000)
+            {
+                blinkTimer = 0;
+            }
+            if(blinkTimer <= 500)
             {
                 if (spriteEffects == SpriteEffects.None)
                 {
-                    Position.X += speed * 30;
-                    OFFSET.X -= speed * 30;
+                    Position.X += speed * 3;
                 }
                 else
                 {
-                    Position.X -= speed * 30;
-                    OFFSET.X += speed * 30;
+                    Position.X -= speed * 3;
                 }
-                checkScroll = true;
+                GameGlobals.CheckBlink(Position);
             }
-            if(checkScroll)
+            else if (checkScroll)
             {
                 GameGlobals.CheckScroll(Position);
             }
-            base.Update(ref OFFSET);
+            base.Update(OFFSET);
         }
 
         public override void Draw(Vector2 OFFSET)
