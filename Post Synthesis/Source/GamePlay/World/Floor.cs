@@ -33,7 +33,7 @@ namespace Post_Synthesis
             {
                 for(int j = 0; j < mapTileSize.Y; j++)
                 {
-                    tiles[i, j] = new("Assets\\World\\Tiles\\Alpha 1", new(i * tileSize.X + position.X, j * tileSize.Y+position.Y),tileSize.ToVector2());
+                    tiles[i, j] = new("Assets\\World\\Tiles\\Alpha Level\\Alpha 1", new(i * tileSize.X + position.X, j * tileSize.Y+position.Y),tileSize.ToVector2());
                 }
             }
         }

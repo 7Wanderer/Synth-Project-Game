@@ -1,1 +1,0 @@
-You can find any miscellaneous textures here. Soon, I will have to rename this to the GUI folder (Including the VN elements) and then make a different Misc folder. That'll be pretty annoying.

@@ -25,16 +25,16 @@ namespace Post_Synthesis.Source
 
         public World()
         {
-            player = new Player("Assets\\Sprites\\Syn\\test sprite", new Vector2(300, 500), new Vector2(128, 216));
-            testEnemy = new Unit("Assets\\Sprites\\test enemy",new Vector2(700,500),new Vector2(128,216));
+            player = new Player("Assets\\Sprites\\Syn\\walk cycle template", new Vector2(300, 500), new Vector2(128, 216));
+            // testEnemy = new Unit("Assets\\Sprites\\test enemy",new Vector2(700,500),new Vector2(128,216));
             floor = new(Globals.screenHeight-400);
             List<Texture2D> t = new()
             {
-                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\far"),
-                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\mid"),
-                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\near")
-            };
-            background = new("Assets\\World\\Backgrounds\\Background1", new(0, 0),new(1600,900),t);
+                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\far"),
+                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\mid"),
+                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\near")
+            }; // Can't wait for the day I'm gonna have to actually make a shitload of these
+            background = new("Assets\\World\\Backgrounds\\Alpha Level\\Background1", new(0, 0),new(1600,900),t);
             player.SetBounds(floor.mapSize, floor.tileSize, floor.position);
             GameGlobals.PassProjectile = AddProjectile;
             GameGlobals.CheckScroll = CheckScroll;
@@ -42,7 +42,7 @@ namespace Post_Synthesis.Source
 
         public virtual void Update()
         {
-            player.Update(offset);
+            player.Update(ref offset);
             foreach(Projectile2D projectile in projectiles) 
             { 
                 projectile.Update(offset, null);
@@ -56,17 +56,18 @@ namespace Post_Synthesis.Source
         public virtual void CheckScroll(object INFO)
         {
             Vector2 tempPos = (Vector2)INFO;
-            if (tempPos.X < -offset.X + Globals.screenWidth *.4f
+            if (tempPos.X - 160 < -offset.X + Globals.screenWidth *.4f
                 && tempPos.X >= Globals.screenWidth/2)
             {
-                offset = new(offset.X + player.speed*2,offset.Y);
+                offset = new(offset.X + player.speed, offset.Y);
             }
-            if (tempPos.X > -offset.X + Globals.screenWidth * .6f
+            if (tempPos.X + 160 > -offset.X + Globals.screenWidth * .6f
                 && tempPos.X <= floor.mapSize.X-Globals.screenWidth / 2)
             {
-                offset = new(offset.X - player.speed*2, offset.Y);
+                offset = new(offset.X - player.speed, offset.Y);
             }
         }
+        // Current problem - minimum offset is stuck at -160 once entering change for the first time.
         public virtual void Draw(Vector2 OFFSET)
         {
             background.Draw(offset);
@@ -76,6 +77,7 @@ namespace Post_Synthesis.Source
                 projectile.Draw(offset);
             }
             player.Draw(offset);
+            Globals.spriteBatch.DrawString(Globals.gameFont, offset.ToString(), new(), Color.White);
         }
     }
 }

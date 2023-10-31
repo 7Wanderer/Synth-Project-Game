@@ -36,7 +36,6 @@ D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows
 D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\Post Synthesis.genruntimeconfig.cache
 D:\synth project game\Synth-Project-Game\Post Synthesis\obj\Debug\net6.0-windows\ref\Post Synthesis.dll
 D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Fonts\defaultFont.xnb
-D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Tiles\Alpha 1.xnb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Fonts\defaultFont.xnb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Sprites\Syn\testSprite.xnb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Tiles\Alpha 1.xnb
@@ -81,10 +80,12 @@ C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\far.xnb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\mid.xnb
 C:\Users\j44nj\Documents\git\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\near.xnb
-D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\Background1.xnb
-D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\far.xnb
-D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\mid.xnb
-D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\near.xnb
-D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Misc\blackBackground.xnb
 D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Portraits\syn alpha.xnb
-D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Sprites\Syn\test sprite.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\GUI\VN Text box.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Sprites\Syn\walk cycle template.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\Alpha Level\Background1.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\Alpha Level\far.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\Alpha Level\mid.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Backgrounds\Alpha Level\near.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\World\Tiles\Alpha Level\Alpha 1.xnb
+D:\synth project game\Synth-Project-Game\Post Synthesis\bin\Debug\net6.0-windows\Content\Assets\Misc\blackBackground.xnb

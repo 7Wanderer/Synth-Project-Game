@@ -30,6 +30,8 @@ namespace Post_Synthesis
         {
             Globals.screenWidth = 1600;
             Globals.screenHeight = 900;
+            // Note to self: When it comes to scaling, be ready to make a global scaleFactor float and multiply everything by it.
+            // Alternatively, I could hang myself.
             graphics.PreferredBackBufferWidth = Globals.screenWidth;
             graphics.PreferredBackBufferHeight = Globals.screenHeight;
             graphics.ApplyChanges();

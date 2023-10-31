@@ -13,14 +13,14 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin Assets/Fonts/defaultFont.spritefont
+#begin ../../Content/Assets/Fonts/defaultFont.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
-/build:Assets/Fonts/defaultFont.spritefont
+/build:../../Content/Assets/Fonts/defaultFont.spritefont;Assets/Fonts/defaultFont.spritefont
 
-#begin Assets/Misc/blackBackground.png
+#begin ../../Content/Assets/GUI/VN Text box.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -30,9 +30,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Misc/blackBackground.png
+/build:../../Content/Assets/GUI/VN Text box.png;Assets/GUI/VN Text box.png
 
-#begin Assets/Portraits/syn alpha.png
+#begin ../../Content/Assets/Misc/blackBackground.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -42,9 +42,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Portraits/syn alpha.png
+/build:../../Content/Assets/Misc/blackBackground.png;Assets/Misc/blackBackground.png
 
-#begin Assets/Sprites/Syn/syn alpha sprite.png
+#begin ../../Content/Assets/Portraits/syn alpha.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -54,9 +54,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/Sprites/Syn/syn alpha sprite.png;Assets/Sprites/Syn/test sprite.png
+/build:../../Content/Assets/Portraits/syn alpha.png;Assets/Portraits/syn alpha.png
 
-#begin Assets/World/Tiles/Alpha 1.png
+#begin ../../Content/Assets/Sprites/Syn/walk cycle template.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -66,5 +66,65 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Assets/World/Tiles/Alpha 1.png
+/build:../../Content/Assets/Sprites/Syn/walk cycle template.png;Assets/Sprites/Syn/walk cycle template.png
+
+#begin ../../Content/Assets/World/Backgrounds/Alpha Level/Background1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/World/Backgrounds/Alpha Level/Background1.png;Assets/World/Backgrounds/Alpha Level/Background1.png
+
+#begin ../../Content/Assets/World/Backgrounds/Alpha Level/far.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/World/Backgrounds/Alpha Level/far.png;Assets/World/Backgrounds/Alpha Level/far.png
+
+#begin ../../Content/Assets/World/Backgrounds/Alpha Level/mid.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/World/Backgrounds/Alpha Level/mid.png;Assets/World/Backgrounds/Alpha Level/mid.png
+
+#begin ../../Content/Assets/World/Backgrounds/Alpha Level/near.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/World/Backgrounds/Alpha Level/near.png;Assets/World/Backgrounds/Alpha Level/near.png
+
+#begin ../../Content/Assets/World/Tiles/Alpha Level/Alpha 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/World/Tiles/Alpha Level/Alpha 1.png;Assets/World/Tiles/Alpha Level/Alpha 1.png
 

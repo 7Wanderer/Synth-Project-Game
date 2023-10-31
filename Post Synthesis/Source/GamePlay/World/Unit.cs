@@ -26,12 +26,12 @@ namespace Post_Synthesis
         {
             minPos = new((-tileSize.X / 2) + origin.X + Position.X, (-tileSize.Y / 2) + Position.Y);
             maxPos = new(mapSize.X + (tileSize.X / 2) - origin.X +Position.X, mapSize.Y - (tileSize.Y / 2) - origin.Y + Position.Y);
-        }
+        } // This method is a whore. If the floor breaks, its this fuckers fault.
 
-        public override void Update(Vector2 OFFSET)
+        public override void Update(ref Vector2 OFFSET)
         {
             Position = Vector2.Clamp(Position, minPos, maxPos);
-            base.Update(OFFSET);
+            base.Update(ref OFFSET);
         }
 
         public override void Draw(Vector2 OFFSET)

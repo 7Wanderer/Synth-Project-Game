@@ -19,6 +19,7 @@ namespace Post_Synthesis
         Moving,
         MovingYOnly,
         Idle,
+        Blink,
         Attack
     }
     public class Player : Unit
@@ -47,9 +48,9 @@ namespace Post_Synthesis
                 }
             }
         }
-        public override void Update(Vector2 OFFSET)
+        public override void Update(ref Vector2 OFFSET)
         {
-            
+
             bool checkScroll = false;
             if (Globals.inputManager.Up()) 
             { 
@@ -79,22 +80,23 @@ namespace Post_Synthesis
             }
             if(Globals.inputManager.Blink())
             {
-                if(spriteEffects == SpriteEffects.None)
+                if (spriteEffects == SpriteEffects.None)
                 {
                     Position.X += speed * 30;
-                    checkScroll = true;
+                    OFFSET.X -= speed * 30;
                 }
                 else
                 {
                     Position.X -= speed * 30;
-                    checkScroll = true;
+                    OFFSET.X += speed * 30;
                 }
+                checkScroll = true;
             }
             if(checkScroll)
             {
                 GameGlobals.CheckScroll(Position);
             }
-            base.Update(OFFSET);
+            base.Update(ref OFFSET);
         }
 
         public override void Draw(Vector2 OFFSET)
