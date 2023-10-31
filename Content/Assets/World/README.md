@@ -3,4 +3,9 @@ I will have to order them by level, making a Backgrounds and Tiles folder for ea
 
 TODO: 
 
-Remake the test levels background, parallaxes and make more (and better!!!) tiles. At the very least, I need to design them and let Aaron draw them for real.
+Test level background (Very basic city, with decrepid buildings
+and walls being the parallax) and floor tiles.
+
+Flint's apartment and floor tiles.
+
+A chair.

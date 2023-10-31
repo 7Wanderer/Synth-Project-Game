@@ -6,4 +6,4 @@ Syn
 Only needs a Normal and a Thinking for now.
 
 Flint, Sasha
-Both need a Normal, Thinking, Worried
+Both need a Normal, Thinking, Worried.

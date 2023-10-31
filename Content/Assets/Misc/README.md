@@ -1,0 +1,1 @@
+Miscellaneous textures will be here - anything random that needs to be drawn on the screen, such as a black background image that I can use as a stand-in for screen opacity. There will probably be more.
