@@ -37,13 +37,16 @@ namespace Post_Synthesis
         }
         public void SetFace(string actorName,Portraits portrait, bool isReversed)
         {
-            foreach(Actor actor in actors) 
-            {
-                if(actor.name ==  actorName)
-                {
-                    actor.SetFace(portrait, isReversed);
-                }
-            }
+			if(actorName != null)
+			{
+				foreach(Actor actor in actors) 
+				{
+					else if(actor.name ==  actorName)
+					{
+						actor.SetFace(portrait, isReversed);
+					}
+				}
+			}
         }
         public void Talk(string text)
         {
