@@ -51,7 +51,7 @@ namespace Post_Synthesis
 
         SpriteEffects portraitReversed = SpriteEffects.None;
 
-        public bool portraitHidden = true;
+        public bool portraitHidden = true, nameHidden = false;
 
         public Actor(Texture2D portraitTextureSheet, Texture2D nameBox, string name)
         {
@@ -65,6 +65,22 @@ namespace Post_Synthesis
 
         public void SetFace(Portraits portrait, bool Reversed)
         {
+            portraitHidden = false;
+            this.portrait = portrait;
+            if (Reversed)
+            {
+                portraitReversed = SpriteEffects.None;
+                portraitPosition = DEFAULT_REVERSE;
+            }
+            else
+            {
+                portraitReversed = SpriteEffects.FlipHorizontally;
+                portraitPosition = DEFAULT;
+            }
+        }
+		public void SetFace(Portraits portrait, bool Reversed, bool nameHidden)
+        {
+			this.nameHidden = nameHidden;
             portraitHidden = false;
             this.portrait = portrait;
             if (Reversed)
