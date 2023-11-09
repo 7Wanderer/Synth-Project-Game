@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/Sprites/Syn/walk cycle template.png</SourceFile>
-  <SourceTime>2023-10-30T18:37:24.218333+00:00</SourceTime>
+  <SourceTime>2023-10-31T12:48:41.5547941+00:00</SourceTime>
   <DestFile>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/bin/Windows/Assets/Sprites/Syn/walk cycle template.xnb</DestFile>
-  <DestTime>2023-10-30T18:37:34.8193375+00:00</DestTime>
+  <DestTime>2023-11-09T12:47:48.4705843+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

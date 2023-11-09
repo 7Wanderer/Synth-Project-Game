@@ -50,7 +50,9 @@ namespace Post_Synthesis
             Globals.gameFont = Content.Load<SpriteFont>("Assets\\Fonts\\defaultFont");
             Globals.scriptManager = new(new TestScript1(),new List<Actor>()
             {
-                new Actor(Content.Load<Texture2D>("Assets\\Portraits\\syn alpha"),null,"Syn")
+                new Actor(Content.Load<Texture2D>("Assets\\Portraits\\syn alpha"),null,"Syn"),
+                new Actor(Content.Load<Texture2D>("Assets\\Portraits\\flint alpha"),null,"Flint"),
+                new Actor(Content.Load<Texture2D>("Assets\\Portraits\\sasha alpha"),null,"Sasha")
             });
             
 

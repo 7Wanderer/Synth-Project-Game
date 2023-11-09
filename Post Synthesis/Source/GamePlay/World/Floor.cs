@@ -16,7 +16,7 @@ namespace Post_Synthesis
 {
     public class Floor
     {
-        readonly Point mapTileSize = new(32, 4);
+        readonly Point mapTileSize = new(128, 8);
         readonly Basic2D[,] tiles;
         public Point tileSize, mapSize;
         public Vector2 position;
@@ -26,9 +26,9 @@ namespace Post_Synthesis
         {
             this.distance = distance;
             tiles = new Basic2D[mapTileSize.X, mapTileSize.Y];
-            tileSize = new(100, 100);
+            tileSize = new(50, 50);
             mapSize = new(tileSize.X*mapTileSize.X,tileSize.Y*mapTileSize.Y);
-            position = new(50, distance + 50);
+            position = new(tileSize.X/2, distance + tileSize.X/2);
             for (int i = 0; i < mapTileSize.X; i++)
             {
                 for(int j = 0; j < mapTileSize.Y; j++)

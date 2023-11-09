@@ -17,7 +17,7 @@ namespace Post_Synthesis
 {
     public class Enemy : Unit
     {
-
+        Texture2D punctuation; //0=question, 1=exclamation
         public Enemy(string PATH, Vector2 Position, Vector2 Dimensions) : base(PATH, Position, Dimensions) 
         {
 

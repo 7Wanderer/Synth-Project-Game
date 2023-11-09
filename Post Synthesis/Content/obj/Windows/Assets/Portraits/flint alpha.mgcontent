@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/World/Backgrounds/Alpha Level/Background1.png</SourceFile>
-  <SourceTime>2023-10-31T12:48:41.5598153+00:00</SourceTime>
-  <DestFile>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/bin/Windows/Assets/World/Backgrounds/Alpha Level/Background1.xnb</DestFile>
-  <DestTime>2023-11-09T12:47:48.7305967+00:00</DestTime>
+  <SourceFile>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/Portraits/flint alpha.png</SourceFile>
+  <SourceTime>2023-11-07T17:45:33.5270173+00:00</SourceTime>
+  <DestFile>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/bin/Windows/Assets/Portraits/flint alpha.xnb</DestFile>
+  <DestTime>2023-11-09T12:47:48.1885843+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

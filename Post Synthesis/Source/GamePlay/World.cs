@@ -18,7 +18,7 @@ namespace Post_Synthesis.Source
         public Vector2 offset = new(0,0);
 
         public Player player;
-        public Unit testEnemy;
+        public Enemy testEnemy;
         public List<Projectile2D> projectiles = new();
         public Floor floor;
         public Background background;
@@ -26,7 +26,7 @@ namespace Post_Synthesis.Source
         public World()
         {
             player = new Player("Assets\\Sprites\\Syn\\walk cycle template", new Vector2(300, 500), new Vector2(128, 216));
-            // testEnemy = new Unit("Assets\\Sprites\\test enemy",new Vector2(700,500),new Vector2(128,216));
+            testEnemy = new Enemy("Assets\\Sprites\\test enemy s",new Vector2(1200,550),new Vector2(128,216));
             floor = new(Globals.screenHeight-400);
             List<Texture2D> t = new()
             {
@@ -87,6 +87,7 @@ namespace Post_Synthesis.Source
                 projectile.Draw(offset);
             }
             player.Draw(offset);
+            testEnemy.Draw(offset);
             Globals.spriteBatch.DrawString(Globals.gameFont, offset.ToString(), new(), Color.White);
         }
     }

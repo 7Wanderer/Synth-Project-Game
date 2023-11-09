@@ -44,6 +44,30 @@
 /processorParam:TextureFormat=Color
 /build:../../Content/Assets/Misc/blackBackground.png;Assets/Misc/blackBackground.png
 
+#begin ../../Content/Assets/Portraits/flint alpha.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/Portraits/flint alpha.png;Assets/Portraits/flint alpha.png
+
+#begin ../../Content/Assets/Portraits/sasha alpha.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/Portraits/sasha alpha.png;Assets/Portraits/sasha alpha.png
+
 #begin ../../Content/Assets/Portraits/syn alpha.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -55,6 +79,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:../../Content/Assets/Portraits/syn alpha.png;Assets/Portraits/syn alpha.png
+
+#begin ../../Content/Assets/Sprites/Enemies/test enemy s.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/Sprites/Enemies/test enemy s.png;Assets/Sprites/test enemy s.png
 
 #begin ../../Content/Assets/Sprites/Syn/walk cycle template.png
 /importer:TextureImporter

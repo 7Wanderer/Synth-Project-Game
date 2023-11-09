@@ -19,8 +19,12 @@ namespace Post_Synthesis
     {
         List<Actor> actors = new();
         Script script;
-        float timer;
+        float timer, textTimer;
+        int characterIndex = 0;
         int tempi = 0;
+
+
+        Vector2 position = new(Globals.screenWidth / 2, Globals.screenHeight * 0.75f);
 
         Texture2D blackBackground;
         float fadein = 0;
@@ -31,6 +35,8 @@ namespace Post_Synthesis
 
         public ScriptManager(Script script, List<Actor> actors)
         {
+            timer = 0;
+            textTimer = 0;
             this.script = script;
             this.actors = actors;
             blackBackground = Globals.content.Load<Texture2D>("Assets\\Misc\\blackBackground");
@@ -50,6 +56,13 @@ namespace Post_Synthesis
             this.text = text;
         }
 
+        public void changeSpeaker(bool left)
+        {
+            if (left)
+                position.X = Globals.screenWidth / 4;
+            else position.X = Globals.screenWidth / 2;
+        }
+
         public void Update()
         {
             if(fadein != 0.5)
@@ -60,6 +73,7 @@ namespace Post_Synthesis
             for (int i = tempi; i <= script.commandCount;)
             {
                 timer += (float)Globals.gameTime.ElapsedGameTime.TotalSeconds;
+                textTimer += (float)Globals.gameTime.ElapsedGameTime.TotalMilliseconds;
 
                 script.Run(i);
 
@@ -72,6 +86,7 @@ namespace Post_Synthesis
                     }
                     else
                     {
+                        textTimer = 0;
                         tempi = i + 1;
                         break;
                     }
@@ -85,6 +100,7 @@ namespace Post_Synthesis
                     }
                     else
                     {
+                        textTimer = 0;
                         tempi = i + 1;
                         break;
                     }
@@ -93,7 +109,6 @@ namespace Post_Synthesis
         }
         public virtual void Draw()
         {
-            Vector2 position = new(Globals.screenWidth / 2, Globals.screenHeight * 0.75f);
             Globals.spriteBatch.Draw(blackBackground, Vector2.Zero, Color.White * 0.3f);
 
             // Globals.spriteBatch.Draw(Textbox, position, null, Color.White, 0, 
