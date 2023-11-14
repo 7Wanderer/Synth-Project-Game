@@ -15,6 +15,6 @@ namespace Post_Synthesis
 {
     public class GameGlobals
     {
-        public static PassObject PassProjectile, CheckScroll, CheckBlink; 
+        public static PassObject PassProjectile, CheckScroll; 
     }
 }

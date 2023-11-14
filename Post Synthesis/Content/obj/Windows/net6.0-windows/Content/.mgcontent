@@ -5,6 +5,7 @@
   <Config />
   <SourceFiles>
     <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/Fonts/defaultFont.spritefont</File>
+    <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/GUI/punctuation.png</File>
     <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/GUI/VN Text box.png</File>
     <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/Misc/blackBackground.png</File>
     <File>D:/synth project game/Synth-Project-Game/Post Synthesis/Content/../../Content/Assets/Portraits/flint alpha.png</File>
@@ -20,6 +21,7 @@
   </SourceFiles>
   <DestFiles>
     <File>Assets/Fonts/defaultFont.spritefont</File>
+    <File>Assets/GUI/punctuation.png</File>
     <File>Assets/GUI/VN Text box.png</File>
     <File>Assets/Misc/blackBackground.png</File>
     <File>Assets/Portraits/flint alpha.png</File>

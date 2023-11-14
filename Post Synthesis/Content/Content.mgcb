@@ -20,6 +20,18 @@
 /processorParam:TextureFormat=Compressed
 /build:../../Content/Assets/Fonts/defaultFont.spritefont;Assets/Fonts/defaultFont.spritefont
 
+#begin ../../Content/Assets/GUI/punctuation.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../Content/Assets/GUI/punctuation.png;Assets/GUI/punctuation.png
+
 #begin ../../Content/Assets/GUI/VN Text box.png
 /importer:TextureImporter
 /processor:TextureProcessor

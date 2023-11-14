@@ -38,13 +38,11 @@ namespace Post_Synthesis
         }
         public virtual void Update(Vector2 OFFSET)
         {
-            if (checkIfFlipped()) origin = new((Dimensions.X + 2*newDimX) / 2, Dimensions.Y / 2);
+            if (checkIfFlipped()) origin = new((Dimensions.X + 2 * newDimX) / 2, Dimensions.Y / 2);
             /*
              * I don't know where the fuck this 2 came from but its the only thing that makes this spritesheet function idk why
              * NOTE TO SELF: It might be the size of the spritesheet (number of images). If it breaks again, test that theory out.
-             * If not, idk. I'm considering scrapping the whole spritesheet thing and just making a texture array to cycle through
-             * because I'm lazy as fuck. I'll ask Aaron about it sometime.
-            */
+             */
             else origin = new(Dimensions.X / 2, Dimensions.Y / 2);
         }
 

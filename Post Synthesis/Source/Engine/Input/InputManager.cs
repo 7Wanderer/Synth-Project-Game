@@ -58,8 +58,10 @@ namespace Post_Synthesis
         }
         public bool Blink()
         {
-            if (!keyboard.GetPress("Q")) blinkOnce = false;
-            if ((keyboard.GetPress("Q")
+            if (Keyboard.GetState().IsKeyUp(Keys.LeftShift)
+                && GamePad.GetState(PlayerIndex.One).Triggers.Left < 0.5) blinkOnce = false;
+
+            if ((Keyboard.GetState().IsKeyDown(Keys.LeftShift)
                 || GamePad.GetState(PlayerIndex.One).Triggers.Left >= 0.5
 
                     ) && !blinkOnce
@@ -73,7 +75,7 @@ namespace Post_Synthesis
         }
         public bool Attack()
         {
-            if (keyboard.GetPress("E")
+            if (Keyboard.GetState().IsKeyDown(Keys.Space)
                 || GamePad.GetState(PlayerIndex.One).Triggers.Right >= 0.5
 
 
@@ -83,8 +85,10 @@ namespace Post_Synthesis
         }
         public bool Continue()
         {
-            if (!keyboard.GetPress("Space")) continueOnce = false;
-            if ((keyboard.GetPress("Space")
+            if (Keyboard.GetState().IsKeyUp(Keys.Enter)
+                && GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Released) continueOnce = false;
+
+            if ((Keyboard.GetState().IsKeyDown(Keys.Enter)
                 || GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed
 
                     ) && !continueOnce

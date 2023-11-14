@@ -22,6 +22,7 @@ namespace Post_Synthesis
         float timer, textTimer;
         int characterIndex = 0;
         int tempi = 0;
+        public bool inactive = true;
 
 
         Vector2 position = new(Globals.screenWidth / 2, Globals.screenHeight * 0.75f);
@@ -47,7 +48,7 @@ namespace Post_Synthesis
 			{
 				foreach(Actor actor in actors) 
 				{
-					else if(actor.name ==  actorName)
+					if(actor.name ==  actorName)
 					{
 						actor.SetFace(portrait, isReversed);
 					}
@@ -112,16 +113,19 @@ namespace Post_Synthesis
         }
         public virtual void Draw()
         {
-            Globals.spriteBatch.Draw(blackBackground, Vector2.Zero, Color.White * 0.3f);
-
-            // Globals.spriteBatch.Draw(Textbox, position, null, Color.White, 0, 
-            //                        new Vector2(Textbox.Width/2,Textbox.Height/2), new Vector2(0.5f, 1), SpriteEffects.None, 0f);
-            Globals.spriteBatch.DrawString(Globals.gameFont, text, new Vector2(position.X, position.Y), Color.Black);
-            text = "";
-            foreach(Actor actor in actors)
+            if (!inactive)
             {
-                actor.Draw();
-                actor.portraitHidden = true;
+                Globals.spriteBatch.Draw(blackBackground, Vector2.Zero, Color.White * 0.3f);
+
+                // Globals.spriteBatch.Draw(Textbox, position, null, Color.White, 0, 
+                //                        new Vector2(Textbox.Width/2,Textbox.Height/2), new Vector2(0.5f, 1), SpriteEffects.None, 0f);
+                Globals.spriteBatch.DrawString(Globals.gameFont, text, new Vector2(position.X, position.Y), Color.Black);
+                text = "";
+                foreach (Actor actor in actors)
+                {
+                    actor.Draw();
+                    actor.portraitHidden = true;
+                }
             }
         }
     }

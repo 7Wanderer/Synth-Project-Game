@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 using Post_Synthesis.Source;
+using System.Reflection.Metadata;
 #endregion
 
 namespace Post_Synthesis.Source
@@ -36,9 +37,15 @@ namespace Post_Synthesis.Source
             }; // Can't wait for the day I'm gonna have to actually make a shitload of these
             background = new("Assets\\World\\Backgrounds\\Alpha Level\\Background1", new(0, 0),new(1600,900),t);
             player.SetBounds(floor.mapSize, floor.tileSize, floor.position);
+            testEnemy.SetBounds(floor.mapSize, floor.tileSize, floor.position);
             GameGlobals.PassProjectile = AddProjectile;
-            GameGlobals.CheckScroll = CheckScroll;
-            GameGlobals.CheckBlink = Blink;
+            GameGlobals.CheckScroll = CheckScroll; 
+            Globals.scriptManager = new(new TestScript1(), new List<Actor>()
+            {
+                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\syn alpha"),null,"Syn"),
+                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\flint alpha"),null,"Flint"),
+                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\sasha alpha"),null,"Sasha")
+            });
         }
         int roundToTen(float number)
         {
@@ -47,7 +54,21 @@ namespace Post_Synthesis.Source
         public virtual void Update()
         {
             player.Update(offset);
-            foreach(Projectile2D projectile in projectiles) 
+            if (testEnemy != null)
+            {
+                testEnemy.Update(offset);
+                if (Math.Abs(player.Position.X - testEnemy.Position.X + 20) < 30 && Math.Abs(player.Position.Y - testEnemy.Position.Y) < 30)
+                {
+                    testEnemy.DimensionRect = new(0, 0, testEnemy.punctuation.Width - 15, testEnemy.punctuation.Height);
+                    if (Globals.inputManager.Attack())
+                    {
+                        testEnemy = null;
+                        Globals.scriptManager.inactive = false;
+                    }
+                }
+                else testEnemy.DimensionRect = new(20, 0, testEnemy.punctuation.Width, testEnemy.punctuation.Height);
+            }
+            foreach (Projectile2D projectile in projectiles) 
             { 
                 projectile.Update(offset, null);
             }
@@ -62,22 +83,12 @@ namespace Post_Synthesis.Source
             Vector2 tempPos = (Vector2)INFO;
             if (offset.X < -tempPos.X + Globals.screenWidth *.4f
                     && offset.X < 0)
-                offset.X += player.speed * 2;
+                offset.X += player.speed;
             else if (offset.X > -tempPos.X + Globals.screenWidth *.6f
                     && offset.X > -floor.mapSize.X+ Globals.screenWidth)
-                offset.X -= player.speed * 2;
+                offset.X -= player.speed;
         }        
 
-        public virtual void Blink(object INFO)
-        {
-            Vector2 tempPos = (Vector2)INFO;
-            if(offset.X < -tempPos.X + Globals.screenWidth / 2
-                    && offset.X < 0)
-                offset.X += roundToTen(player.speed * 3);
-            else if (offset.X > -tempPos.X + Globals.screenWidth / 2
-                    && offset.X > -floor.mapSize.X+ Globals.screenWidth)
-                offset.X -= roundToTen(player.speed * 3);
-        }
         public virtual void Draw(Vector2 OFFSET)
         {
             background.Draw(offset);
@@ -87,7 +98,7 @@ namespace Post_Synthesis.Source
                 projectile.Draw(offset);
             }
             player.Draw(offset);
-            testEnemy.Draw(offset);
+            if(testEnemy != null) testEnemy.Draw(offset);
             Globals.spriteBatch.DrawString(Globals.gameFont, offset.ToString(), new(), Color.White);
         }
     }

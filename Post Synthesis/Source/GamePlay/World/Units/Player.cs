@@ -50,6 +50,7 @@ namespace Post_Synthesis
         }
         public override void Update(Vector2 OFFSET)
         {
+
             blinkTimer += (float)Globals.gameTime.ElapsedGameTime.TotalMilliseconds;
             bool checkScroll = false;
             if (Globals.inputManager.Up()) 
@@ -82,19 +83,13 @@ namespace Post_Synthesis
             {
                 blinkTimer = 0;
             }
-            if(blinkTimer <= 500)
+            if (blinkTimer <= 500)
             {
-                if (spriteEffects == SpriteEffects.None)
-                {
-                    Position.X += speed * 3;
-                }
-                else
-                {
-                    Position.X -= speed * 3;
-                }
-                GameGlobals.CheckBlink(Position);
+                speed = 15f;
+                checkScroll = true;
             }
-            else if (checkScroll)
+            else speed = 5f;
+            if (checkScroll)
             {
                 GameGlobals.CheckScroll(Position);
             }
@@ -104,6 +99,7 @@ namespace Post_Synthesis
         public override void Draw(Vector2 OFFSET)
         {
             base.Draw(OFFSET);
+            Globals.spriteBatch.DrawString(Globals.gameFont, (Position.X - Globals.screenWidth / 2).ToString(), new(0, 50), Color.White);
         }
 
     }
