@@ -49,10 +49,25 @@ namespace Post_Synthesis
             Globals.inputManager.keyboard = new();
             Globals.gameFont = Content.Load<SpriteFont>("Assets\\Fonts\\defaultFont");
 
-            world = new World();
-            
+            List<Texture2D> t = new()
+            {
+                Content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\far"),
+                Content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\mid"),
+                Content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\near")
+            };
+            Enemy[] enemies = { new Enemy("Assets\\Sprites\\test enemy s", new Vector2(1200, 550), new Vector2(128, 216)) };
+            Level level1 = new Level(new Player("Assets\\Sprites\\Syn\\walk cycle template", new(100,500), new(128,216)),
+                                    enemies,
+                                    new(Globals.screenHeight - 350, ""),
+                                    new("Assets\\World\\Backgrounds\\Alpha Level\\Background1", new(0, 0), new(1600, 900), t));
+            world = new World(level1);
 
-
+            Globals.scriptManager = new(new TestScript1(), new List<Actor>()
+            {
+                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\syn alpha"),null,"Syn"),
+                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\flint alpha"),null,"Flint"),
+                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\sasha alpha"),null,"Sasha")
+            });
 
             // TODO: use this.Content to load your game content here
         }
@@ -90,8 +105,8 @@ namespace Post_Synthesis
 
             Globals.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
 
-            world.Draw(Vector2.Zero);
-            if (Globals.scriptManager != null) Globals.scriptManager.Draw();
+            world.Draw();
+            if (!Globals.scriptManager.inactive) Globals.scriptManager.Draw();
 
             Globals.spriteBatch.End();
 

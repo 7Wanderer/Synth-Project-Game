@@ -16,13 +16,13 @@ namespace Post_Synthesis
 {
     public class Floor
     {
-        readonly Point mapTileSize = new(128, 8);
+        readonly Point mapTileSize = new(128, 5);
         readonly Basic2D[,] tiles;
         public Point tileSize, mapSize;
         public Vector2 position;
         public readonly int distance;
 
-        public Floor(int distance)
+        public Floor(int distance, string PATH)
         {
             this.distance = distance;
             tiles = new Basic2D[mapTileSize.X, mapTileSize.Y];

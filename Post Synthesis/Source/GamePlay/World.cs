@@ -24,33 +24,21 @@ namespace Post_Synthesis.Source
         public Floor floor;
         public Background background;
 
-        public World()
+        public World(Level level)
         {
-            player = new Player("Assets\\Sprites\\Syn\\walk cycle template", new Vector2(300, 500), new Vector2(128, 216));
-            testEnemy = new Enemy("Assets\\Sprites\\test enemy s",new Vector2(1200,550),new Vector2(128,216));
-            floor = new(Globals.screenHeight-400);
-            List<Texture2D> t = new()
-            {
-                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\far"),
-                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\mid"),
-                Globals.content.Load<Texture2D>("Assets\\World\\Backgrounds\\Alpha Level\\near")
-            }; // Can't wait for the day I'm gonna have to actually make a shitload of these
-            background = new("Assets\\World\\Backgrounds\\Alpha Level\\Background1", new(0, 0),new(1600,900),t);
+            player = level.player;
+            testEnemy = level.enemies[0];
+            floor = level.floor;
+            background = level.background;
+
             player.SetBounds(floor.mapSize, floor.tileSize, floor.position);
             testEnemy.SetBounds(floor.mapSize, floor.tileSize, floor.position);
+
             GameGlobals.PassProjectile = AddProjectile;
             GameGlobals.CheckScroll = CheckScroll; 
-            Globals.scriptManager = new(new TestScript1(), new List<Actor>()
-            {
-                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\syn alpha"),null,"Syn"),
-                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\flint alpha"),null,"Flint"),
-                new Actor(Globals.content.Load<Texture2D>("Assets\\Portraits\\sasha alpha"),null,"Sasha")
-            });
+                        
         }
-        int roundToTen(float number)
-        {
-            return ((int)(number / 10)) * 10;
-        }
+
         public virtual void Update()
         {
             player.Update(offset);
@@ -89,17 +77,18 @@ namespace Post_Synthesis.Source
                 offset.X -= player.speed;
         }        
 
-        public virtual void Draw(Vector2 OFFSET)
+        public virtual void Draw()
         {
-            background.Draw(offset);
-            floor.Draw(offset);
+            Vector2 OFFSET = offset + Globals.scriptManager.offset;
+            background.Draw(OFFSET);
+            floor.Draw(OFFSET);
             foreach (Projectile2D projectile in projectiles)
             {
-                projectile.Draw(offset);
+                projectile.Draw(OFFSET);
             }
-            player.Draw(offset);
-            if(testEnemy != null) testEnemy.Draw(offset);
-            Globals.spriteBatch.DrawString(Globals.gameFont, offset.ToString(), new(), Color.White);
+            player.Draw(OFFSET);
+            if(testEnemy != null) testEnemy.Draw(OFFSET);
+            Globals.spriteBatch.DrawString(Globals.gameFont, OFFSET.ToString(), new(), Color.White);
         }
     }
 }

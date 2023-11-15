@@ -23,12 +23,13 @@ namespace Post_Synthesis
         int characterIndex = 0;
         int tempi = 0;
         public bool inactive = true;
+        public Vector2 offset;
 
 
         Vector2 position = new(Globals.screenWidth / 2, Globals.screenHeight * 0.75f);
 
         Texture2D blackBackground;
-        float fadein = 0;
+        float fadein = 0.3f;
 
         Texture2D Textbox;
         string text = "";
@@ -58,6 +59,63 @@ namespace Post_Synthesis
         public void Talk(string text)
         {
             this.text = text;
+        }
+
+        public void fadeIn(float fadein, float speed)
+        {
+            if (this.fadein > fadein) this.fadein = fadein;
+            if (this.fadein == fadein) return;
+            this.fadein += speed;
+        }
+
+        public void playAnim(ref Unit unit)
+        {
+
+        }
+
+        public void moveUnit(ref Unit unit,Vector2 endPos, float speed)
+        {
+            if (endPos.X != unit.Position.X)
+            {
+                if (Math.Abs(unit.Position.X - endPos.X) < speed) speed = 1;
+                if (unit.Position.X < endPos.X) unit.Position.X += speed;
+                else unit.Position.X -= speed;
+            }
+            else
+            {
+                if (endPos.Y == offset.Y) return;
+                else
+                {
+                    if (Math.Abs(offset.Y - endPos.Y) < speed) speed = 1;
+                    if (offset.Y < endPos.Y) offset.Y += speed;
+                    else offset.Y -= speed;
+                }
+            }
+        }
+
+        public void moveCamera(Vector2 endPos, float speed)
+        {
+            endPos = -endPos;
+            if (endPos.X != offset.X)
+            {
+                if (Math.Abs(offset.X - endPos.X) < speed) speed = 1;
+                if (offset.X < endPos.X) offset.X += speed;
+                else offset.X -= speed;
+            }
+            else
+            {
+                if (endPos.Y == offset.Y) return;
+                else
+                {
+                    if (Math.Abs(offset.Y - endPos.Y) < speed) speed = 1;
+                    if (offset.Y < endPos.Y) offset.Y += speed;
+                    else offset.Y -= speed;
+                }
+            }
+        }
+        public void resetCamera()
+        {
+            offset = Vector2.Zero;
         }
 
         public void changeSpeaker(bool left)
@@ -115,7 +173,7 @@ namespace Post_Synthesis
         {
             if (!inactive)
             {
-                Globals.spriteBatch.Draw(blackBackground, Vector2.Zero, Color.White * 0.3f);
+                Globals.spriteBatch.Draw(blackBackground, Vector2.Zero, Color.White * fadein);
 
                 // Globals.spriteBatch.Draw(Textbox, position, null, Color.White, 0, 
                 //                        new Vector2(Textbox.Width/2,Textbox.Height/2), new Vector2(0.5f, 1), SpriteEffects.None, 0f);

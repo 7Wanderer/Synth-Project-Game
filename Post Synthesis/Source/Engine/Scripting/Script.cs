@@ -12,13 +12,17 @@ namespace Post_Synthesis.Source
         public float timeLeft;
         public bool activeTimer = false;
 
+        //When making a constructor for a script, load in any units to move.
+
         public void ExitScript()
         {
-            Globals.scriptManager = null;
+            Globals.scriptManager.inactive = true;
+            Globals.scriptManager.resetCamera();
         }
         public virtual void Run(int i)
         {
 
         }
     }
+
 }

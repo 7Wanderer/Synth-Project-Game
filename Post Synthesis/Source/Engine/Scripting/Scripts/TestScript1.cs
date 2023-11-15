@@ -17,7 +17,7 @@ namespace Post_Synthesis
     {
         public TestScript1()
         {
-            commandCount = 20;
+            commandCount = 21;
         }
 
         public override void Run(int i)
@@ -74,56 +74,63 @@ namespace Post_Synthesis
                     Globals.scriptManager.Talk("Alright, no need to get all physicist on me.\nI get enough of that from her.");
                     break;
                 case 9:
-                    Globals.scriptManager.SetFace("Syn", Portraits.Normal, false);
+                    Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
                     Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
-                    Globals.scriptManager.Talk("But I'm happy to have you on our side.");
+                    Globals.scriptManager.changeSpeaker(true);
+                    Globals.scriptManager.Talk("...");
                     break;
                 case 10:
+                    Globals.scriptManager.SetFace("Syn", Portraits.Normal, false);
+                    Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
+                    Globals.scriptManager.changeSpeaker(false);
+                    Globals.scriptManager.Talk("But I'm happy to have you on our side.");
+                    break;
+                case 11:
                     Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
                     Globals.scriptManager.changeSpeaker(true);
                     Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
                     Globals.scriptManager.Talk("I don't know, Flint...");
                     break;
-                case 11:
+                case 12:
                     Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
                     Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
                     Globals.scriptManager.Talk("I don't know, Flint...\nIf she's connected to my father,\nthere's no way we can trust her.");
                     break;
-                case 12:
+                case 13:
                     Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
                     Globals.scriptManager.changeSpeaker(false);
                     Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
                     Globals.scriptManager.Talk("Yeah, I know we can't trust her,\nbut what choice do we have?");
                     break;
-                case 13:
-                    Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
-                    Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
-                    Globals.scriptManager.Talk("...");
-                    break;
                 case 14:
                     Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
                     Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
-                    Globals.scriptManager.Talk("If we don't go with her, we're just\ngonna starve to death.");
+                    Globals.scriptManager.Talk("...");
                     break;
                 case 15:
                     Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
                     Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
-                    Globals.scriptManager.Talk("If we don't go with her, we're just\ngonna starve to death. Or die.");
+                    Globals.scriptManager.Talk("If we don't go with her, we're just\ngonna starve to death.");
                     break;
                 case 16:
+                    Globals.scriptManager.SetFace("Sasha", Portraits.Normal, false);
+                    Globals.scriptManager.SetFace("Flint", Portraits.Normal, true);
+                    Globals.scriptManager.Talk("If we don't go with her, we're just\ngonna starve to death. Or die.");
+                    break;
+                case 17:
                     Globals.scriptManager.SetFace("Syn", Portraits.Normal, false);
                     Globals.scriptManager.changeSpeaker(true);
                     Globals.scriptManager.Talk("...");
                     break;
-                case 17:
+                case 18:
                     Globals.scriptManager.SetFace("Syn", Portraits.Normal, false);
                     Globals.scriptManager.Talk("They don't trust me.");
                     break;
-                case 18:
+                case 19:
                     Globals.scriptManager.SetFace("Syn", Portraits.Normal, false);
                     Globals.scriptManager.Talk("They don't trust me. Understandable.");
                     break;
-                case 19:
+                case 20:
                     Globals.scriptManager.SetFace("Syn", Portraits.Normal, false);
                     Globals.scriptManager.Talk("They don't trust me. Understandable.\nBut without that trust...");
                     break;

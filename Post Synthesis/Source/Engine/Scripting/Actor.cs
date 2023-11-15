@@ -34,6 +34,7 @@ namespace Post_Synthesis
     {
         // constants (had to define with readonly because i'm a bitch)
 
+
         readonly int WIDTH = 480, HEIGHT = 960;
         readonly float SCALE = 1;
 
